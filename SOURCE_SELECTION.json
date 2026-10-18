@@ -1,6 +1,6 @@
 {
   "schema": "casimirbot.scripts_general_remainder_source_selection.v1",
-  "status": "private-technical-selection-rights-pending",
+  "status": "reviewed-source-only-snapshot",
   "sourceCommit": "0272ef68f3bdfa1a822261cc56a74bebea3d40e7",
   "parentInventory": {
     "path": "docs/evidence/github-source-review-2026-10-17/scripts-non-nhm2-source-selection.json",
