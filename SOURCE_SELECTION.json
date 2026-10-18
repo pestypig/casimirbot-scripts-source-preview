@@ -1,0 +1,3110 @@
+{
+  "schema": "casimirbot.scripts_general_remainder_source_selection.v1",
+  "status": "private-technical-selection-rights-pending",
+  "sourceCommit": "0272ef68f3bdfa1a822261cc56a74bebea3d40e7",
+  "parentInventory": {
+    "path": "docs/evidence/github-source-review-2026-10-17/scripts-non-nhm2-source-selection.json",
+    "sha256": "8d063cb49bb96b163bc02f7274ed91887535e04f011325efe708f31de4c24cb9"
+  },
+  "selectionRule": "non-NHM2-named code-like scripts, excluding 57 already selected environment/scientific paths and 16 tracked .tmp-* debug scripts",
+  "sourceFiles": 502,
+  "sourceBytes": 9203369,
+  "excludedOverlapPaths": [
+    "scripts/environment-packages/build-clock-native-candidate.mjs",
+    "scripts/environment-packages/build-private-clock.mjs",
+    "scripts/environment-packages/checkpoint-local-mvp.mjs",
+    "scripts/environment-packages/launch-local-mvp.ps1",
+    "scripts/environment-packages/launch-private-clock-app.mjs",
+    "scripts/environment-packages/measure-clock-bridge-phases.mjs",
+    "scripts/environment-packages/measure-private-clock-host.ts",
+    "scripts/environment-packages/measure-windows-clock-startup.mjs",
+    "scripts/environment-packages/package-local-mvp.mjs",
+    "scripts/environment-packages/prepare-private-clock-app.mjs",
+    "scripts/environment-packages/private-clock-launch-records.mjs",
+    "scripts/environment-packages/report-local-release-readiness.ps1",
+    "scripts/environment-packages/review-local-mvp-client-drift.mjs",
+    "scripts/environment-packages/review-local-mvp-dependencies.cjs",
+    "scripts/environment-packages/tar-archive.mjs",
+    "scripts/environment-packages/test-clock-native-faults.mjs",
+    "scripts/environment-packages/test-clock-prepared-bridge.mjs",
+    "scripts/environment-packages/test-desktop-clock-ipc.mjs",
+    "scripts/environment-packages/test-desktop-clock-ui.mjs",
+    "scripts/environment-packages/test-desktop-lifecycle.mjs",
+    "scripts/environment-packages/test-windows-clock-isolation-lifecycle.mjs",
+    "scripts/environment-packages/test-windows-clock-isolation.mjs",
+    "scripts/environment-packages/test-windows-clock-job.mjs",
+    "scripts/environment-packages/test-windows-clock-local-endpoints.mjs",
+    "scripts/environment-packages/test-windows-clock-network-families.mjs",
+    "scripts/environment-packages/update-local-mvp-service.mjs",
+    "scripts/environment-packages/update-local-mvp-static.mjs",
+    "scripts/environment-packages/verify-local-mvp.ps1",
+    "scripts/equations/equation-artifact-writer.ts",
+    "scripts/equations/equation-axis-templates.ts",
+    "scripts/equations/equation-node-resolver.ts",
+    "scripts/equations/equation-plot-spec.ts",
+    "scripts/equations/equation-sampler.ts",
+    "scripts/equations/equation-variable-scope.ts",
+    "scripts/equations/equation-visualizer-types.ts",
+    "scripts/equations/load-equation-map.ts",
+    "scripts/equations/operators/field-sample-operator.ts",
+    "scripts/equations/operators/gate-status-operator.ts",
+    "scripts/equations/operators/region-aggregate-operator.ts",
+    "scripts/equations/operators/residual-operator.ts",
+    "scripts/equations/operators/scalar-expression-operator.ts",
+    "scripts/equations/operators/tensor-component-operator.ts",
+    "scripts/equations/operators/worldline-integral-operator.ts",
+    "scripts/equations/safe-mathjs-evaluator.ts",
+    "scripts/figures/contact-sheet.ts",
+    "scripts/figures/figure-captions.ts",
+    "scripts/figures/figure-citations.ts",
+    "scripts/figures/figure-colors.ts",
+    "scripts/figures/figure-manifest.ts",
+    "scripts/figures/figure-types.ts",
+    "scripts/figures/render-graphviz.ts",
+    "scripts/figures/render-svg-table.ts",
+    "scripts/figures/render-vega.ts",
+    "scripts/rendering/scientific-3p1/brick-io.ts",
+    "scripts/rendering/scientific-3p1/mesh.ts",
+    "scripts/rendering/scientific-3p1/overlays.ts",
+    "scripts/rendering/scientific-3p1/rasterizer.ts"
+  ],
+  "heldTemporaryPaths": [
+    "scripts/.tmp-analyze-attempt39.mjs",
+    "scripts/.tmp-et6-checkpoint-replay.ts",
+    "scripts/.tmp-fetch-minecraft-turn-debug.mjs",
+    "scripts/.tmp-g6-natural-ask.mjs",
+    "scripts/.tmp-g6-rebuild-a1.mjs",
+    "scripts/.tmp-inspect-camera-turn.mjs",
+    "scripts/.tmp-inspect-guardian-artifact.mjs",
+    "scripts/.tmp-inspect-guardian-observation.mjs",
+    "scripts/.tmp-inspect-guardian-turn.ts",
+    "scripts/.tmp-measure-schema.ts",
+    "scripts/.tmp-pair-player-agent-via-inbox.mjs",
+    "scripts/.tmp-read-stage-ledger.mjs",
+    "scripts/.tmp-renew-existing-player-action-authority.mjs",
+    "scripts/.tmp-replay-itinerary-state.ts",
+    "scripts/.tmp-summarize-guardian-attempt.mjs",
+    "scripts/.tmp-wait-active-minecraft-workflow.mjs"
+  ],
+  "files": [
+    {
+      "path": "scripts/agi-artifacts.ts",
+      "sha256": "f4202dd2047bd80cac1d34d312e26c8204f010cd090c740dab7d3c2c745b1a26",
+      "bytes": 601,
+      "gitBlob": "0057d889d60db496db76caa99913ed46ca03efe6"
+    },
+    {
+      "path": "scripts/agi-execution-report.ts",
+      "sha256": "9ba436fce2739268aaab261e950239900df769ac677a9adf252634b11655a16e",
+      "bytes": 5891,
+      "gitBlob": "40bd6c2a72ad16d9e0312112befdbe63b6fe1758"
+    },
+    {
+      "path": "scripts/agi-export.ts",
+      "sha256": "1469157157956bc9814376bb57996e9dfed89a49c3b79a881a0a11a949a500c7",
+      "bytes": 3200,
+      "gitBlob": "b15c2562b991568867889bf0793e547533e21ef0"
+    },
+    {
+      "path": "scripts/agi-gguf-bench.ts",
+      "sha256": "23e8d8ef918862604d3e1e9489903d0f946925180a4dd4b6ede85c940d893051",
+      "bytes": 6315,
+      "gitBlob": "e3f858fa426b5ef2f8ac5c81574f366953c467b5"
+    },
+    {
+      "path": "scripts/agi-holdout-compare.ts",
+      "sha256": "50da568235b88582271badc7b4bda3d7a090e02b174a0781a9cf394aff67233c",
+      "bytes": 8959,
+      "gitBlob": "1bf01f2aff61c9333e6f20d56199276abe7245ea"
+    },
+    {
+      "path": "scripts/agi-holdout-eval.ts",
+      "sha256": "b57bff7a35b880aab830ed0f2d321ecc0121cbfce54aeefed07066b3b4980ec7",
+      "bytes": 8462,
+      "gitBlob": "d74e8d52bdfdcb0f592cf43cc108be40694dc2b1"
+    },
+    {
+      "path": "scripts/agi-holdout-gate.ts",
+      "sha256": "94cd23f69554eff506eca1a9e9aedb12ff6acd81ba43570ccc3031775ae697c9",
+      "bytes": 16739,
+      "gitBlob": "5090ef1c9a87c5095129c80b54c94924bbed442b"
+    },
+    {
+      "path": "scripts/agi-holdout-oracle.ts",
+      "sha256": "1e547380601b553797f5871c4bd43642c69a56aece0a0fa76eb88bf7408e8f25",
+      "bytes": 10426,
+      "gitBlob": "4c857319a5089fb69f74b443cea42ee4b299e071"
+    },
+    {
+      "path": "scripts/agi-holdout.ts",
+      "sha256": "8dc07c37a9b548640f4ba0b65aab7470eb8b364ea7bb83193ad13abe6c8b1e08",
+      "bytes": 3416,
+      "gitBlob": "9f0d0aaf09fc17e62935f9499c4e3f04a50ea5a7"
+    },
+    {
+      "path": "scripts/agi-rc0-freeze.ts",
+      "sha256": "10ca03a22ceb9d4f5463bceb6ddc2c5223424a179af3abad6ac4c78c6f4b8fed",
+      "bytes": 15118,
+      "gitBlob": "625af54132e009df0248465b113592d8ad485bff"
+    },
+    {
+      "path": "scripts/agi-refinery-policy.ts",
+      "sha256": "cd2ab7d70e906898f1bb06cb6139da464aad425717fcb2dc19d161a773158401",
+      "bytes": 1540,
+      "gitBlob": "79b14d04d128e1582dd4c479474ece52bf6d4f00"
+    },
+    {
+      "path": "scripts/agi-replay.ts",
+      "sha256": "1ff5fbc480d0a6b7cf6d409c537778a65d39e2c2462077b6044fd59eb4374361",
+      "bytes": 8158,
+      "gitBlob": "6743a58aef47ee52c76bd46e49764595d1d23b8b"
+    },
+    {
+      "path": "scripts/agi-safety-report.ts",
+      "sha256": "c4a825959480b5ec4cdc9f2e2d83f984c603f14f3847a11993297d639d35a585",
+      "bytes": 5605,
+      "gitBlob": "84be69a58566acfa18903a9123134f4b2ce4ca69"
+    },
+    {
+      "path": "scripts/agi-seed-mine.ts",
+      "sha256": "41a433cb224e3b4ef353c6362e9f07d35cacbdaaeee89cb0510ba56b3bbe5fcd",
+      "bytes": 46968,
+      "gitBlob": "b81893593af3a46c886b9e4c15a51fedd062f7f9"
+    },
+    {
+      "path": "scripts/agi-train-answerer.py",
+      "sha256": "2f659ffca111b4bb916da843110fe57071800378b2d67271563faa0d737486f5",
+      "bytes": 11790,
+      "gitBlob": "df2b284fb714468d4388310b9283081c4332f3a6"
+    },
+    {
+      "path": "scripts/agi-train-router.py",
+      "sha256": "451392b604acfbdb799c66d2a6974b25640a8ceb45d770a34bc52028effcbb27",
+      "bytes": 9382,
+      "gitBlob": "cc66f4d074f0adb46a4e13f10bac6710a85163ca"
+    },
+    {
+      "path": "scripts/agi-variants.ts",
+      "sha256": "427ec59f82e4538557544cc3b0f402f93c319f8a16338b7e1b99c347c47054b5",
+      "bytes": 13693,
+      "gitBlob": "d88091cc37d6a5f13e8695105ba95df0541d373b"
+    },
+    {
+      "path": "scripts/alcubierre_invariants_fd.py",
+      "sha256": "c289a9b5c85f50a0fe4fc58433948752710808583b50444e50c02f23f1d683d7",
+      "bytes": 7426,
+      "gitBlob": "e432781c9afcddfcd258261f52950befb1a97735"
+    },
+    {
+      "path": "scripts/annotate-helix-public-ui-control-ids.ts",
+      "sha256": "8e76d4a288bbda619d52c358ebacd13cfc94e2afa93e9090846f7fbebe8b1f3f",
+      "bytes": 5977,
+      "gitBlob": "154d718407f0bfaf3c4dcd6f73e3783278236b7b"
+    },
+    {
+      "path": "scripts/ar2-client-runtime-bridge-slice.mjs",
+      "sha256": "b78b6bfa7ae585ae1767ce53c272b74a68a071507f28798ed12381e623ad8160",
+      "bytes": 1507,
+      "gitBlob": "e69e07aa18b8f659ab8a10959593009d352c16bb"
+    },
+    {
+      "path": "scripts/ar2-desktop-dependency-slices.mjs",
+      "sha256": "18e4ba640c75e28df4d8f84d13101cfa3c55a697acb1d8d6d959a8ced3b68cff",
+      "bytes": 4278,
+      "gitBlob": "4f51141c993e65f5749956b60a02b85dc35e8675"
+    },
+    {
+      "path": "scripts/ar2-main-source-slice.mjs",
+      "sha256": "0311a113ea8c7adc5959be644764f80198e6f23c6370ff62440c2f34313bb106",
+      "bytes": 6065,
+      "gitBlob": "f9c5753fa616491c5ae6ed128c38c5b9c08fcc90"
+    },
+    {
+      "path": "scripts/ar2-server-entrypoint-slice.mjs",
+      "sha256": "d8845e912b32aabfd34c92e38f71fd97f46effd9fafafa5e32e6a1c2abb48cf6",
+      "bytes": 2468,
+      "gitBlob": "e9d0f398543b92458d6d4ca151d91f40964922d7"
+    },
+    {
+      "path": "scripts/atlas-bench.ts",
+      "sha256": "390a09ed1592de42fa3ee26ad997e4b9fdd65559f96b389e9c35aec9bc819bef",
+      "bytes": 25987,
+      "gitBlob": "3851dfd217214ea6643554fd3c4a665bf6e895d4"
+    },
+    {
+      "path": "scripts/audit-ar2-staged-imports.mjs",
+      "sha256": "b870e359167c8dde81f6f9734e25a171ae419d3bd623ea0bc5260d2477ebdbb9",
+      "bytes": 3122,
+      "gitBlob": "4c662e4f33eb241f5e1e6d4dad3b38ea74618b3b"
+    },
+    {
+      "path": "scripts/audit-bundle.ts",
+      "sha256": "a18a24bcc0d33af1c5376dd232fe513a521f43445ffd9dcc49b8976513e73c85",
+      "bytes": 3313,
+      "gitBlob": "e102d259cf69c3cd2573b05df5437156fc0b561b"
+    },
+    {
+      "path": "scripts/audit-docs-retrieval-authority.ts",
+      "sha256": "3263ac388ede18427322409be7a3059f56e893ff092011df69f7a281e07a5b0d",
+      "bytes": 2016,
+      "gitBlob": "7eb843d6c2462931b94790dab1a8055a84d9e0c3"
+    },
+    {
+      "path": "scripts/audit-environment-harness-work-program.ts",
+      "sha256": "ac2da6c148360a747a28f0e83f09d0e9a3ad1c0d0d157288d866a01fd99a7522",
+      "bytes": 7343,
+      "gitBlob": "a65674cf7ec81db279e1d2bb505b88e30f902eed"
+    },
+    {
+      "path": "scripts/audit-g7-brokerage-transfer.ts",
+      "sha256": "53c2270e7fbe55ed5af9102dc618841336c83ee10d5a30f841b80ce4a8ceca14",
+      "bytes": 976,
+      "gitBlob": "0611f357461faddacaefb6c31998baccebf62ae3"
+    },
+    {
+      "path": "scripts/audit-harness-capability-crosswalk.ts",
+      "sha256": "2de6b3bf63f02d11c04fca02ee5bd5afea5a55844024df2e4c17d71628a690ad",
+      "bytes": 5402,
+      "gitBlob": "c73c4e35fd006d9fbc69c3ee9cbd160da66e44cb"
+    },
+    {
+      "path": "scripts/audit-helix-mcp-evidence-capabilities.ts",
+      "sha256": "eddea39d088627509f0f93c2fe9bc8b1c6ce0b45a7d75ecdca4e064c077873d5",
+      "bytes": 1018,
+      "gitBlob": "9358953012a6c931ed159e3282f18357713def72"
+    },
+    {
+      "path": "scripts/audit-helix-public-ui-affordances.ts",
+      "sha256": "ba651e9c548510b25756e20c68e627f6ac7e6853b11a15f8aaf44ec21827d06f",
+      "bytes": 4606,
+      "gitBlob": "a470865d0d15a4d5b81e68bcb128b7d09b937a09"
+    },
+    {
+      "path": "scripts/audit-helix-public-ui-capabilities.ts",
+      "sha256": "f1af754d47ead8cafdf889bf9f666f30b3d07157947759369c5a34443dbac9a1",
+      "bytes": 1046,
+      "gitBlob": "e92caa1d564a43653d91fe3a148b59d625164612"
+    },
+    {
+      "path": "scripts/audit-init.ts",
+      "sha256": "fca38f7cfbdc233a1e0c66f5c852334319dbf31a163e524fa5cdab10a6c564c3",
+      "bytes": 3123,
+      "gitBlob": "a95aae505b3609edfec741415af9bd30ad7ca982"
+    },
+    {
+      "path": "scripts/audit-minecraft-nether1-n0-readiness.ts",
+      "sha256": "561fb9bf11217cb4e50764f72e85b73885d739ecfb2c42b67c1505368718b837",
+      "bytes": 14378,
+      "gitBlob": "37fb8953939f1c765a5324d380e48f68bc50e9a4"
+    },
+    {
+      "path": "scripts/audit-workstation-language-coverage.ts",
+      "sha256": "fd570a54fe60d627df16fe407a8dd1b71ab368c28ffb47d298a3dc9e43a0486b",
+      "bytes": 20249,
+      "gitBlob": "7f346b4ccf7dbc2f0e102e62602bbb98b9ef11d2"
+    },
+    {
+      "path": "scripts/audit/scientific-vs-einstein-capability.ts",
+      "sha256": "0a2da20bbb870bb1c327d46c81ae09e51d544674978b2ed077c3a89b9ac7351a",
+      "bytes": 11843,
+      "gitBlob": "2df7c7b6a217eeddf1ded4c003393654299e3ffb"
+    },
+    {
+      "path": "scripts/bench.ts",
+      "sha256": "3b259b9542b27936babcd3b6a1a7b91cbc4d34f98910595e531119039c764b36",
+      "bytes": 2239,
+      "gitBlob": "347b5fa7597f4cc9d74d6d7d9b97da474228d742"
+    },
+    {
+      "path": "scripts/benchmark-local-snapshot-writer.ts",
+      "sha256": "0b3a672681bc99c35f5ee3f88416b6d48f8028f7147a65d6541cc5fe1b97b7bb",
+      "bytes": 2810,
+      "gitBlob": "c70ce27a6afdd42603dd11a306756061314f1a45"
+    },
+    {
+      "path": "scripts/bridge/trace-to-codex.ts",
+      "sha256": "c0ea839486b5e749e64a71cb789127e30563f41a5f29053627a9f0056b2c3fbd",
+      "bytes": 1784,
+      "gitBlob": "13520048488c2e90e30405e28d440bca057ab826"
+    },
+    {
+      "path": "scripts/build-code-lattice.ts",
+      "sha256": "7b14ce021d0a32891725e54d034eb3ae3e887feca126815f990399f63834b6f2",
+      "bytes": 997,
+      "gitBlob": "e3f649871fa10d954747260cd9a2e0ea6e44575b"
+    },
+    {
+      "path": "scripts/build-local-connection-preview.mjs",
+      "sha256": "18d32755375124f7e6c93b474b0d47899a3748df2fcde22663f99d06226871b9",
+      "bytes": 2172,
+      "gitBlob": "2bdd7e7c5e38840efcaae01fc86c5ba45d7ce964"
+    },
+    {
+      "path": "scripts/build-math-congruence-matrix.ts",
+      "sha256": "0bf32bb7b5572ebe75fc175d8fa1a5a366ad3efdc12fd7f688c0dc482034852e",
+      "bytes": 7351,
+      "gitBlob": "636f5ade1d47b45c95f3162c3542969825c182b3"
+    },
+    {
+      "path": "scripts/build-panel-tree.ts",
+      "sha256": "2738113e6b9e349243e80f4dc440660a3b6b45c9748e4f1c1725b9809813a8f8",
+      "bytes": 20316,
+      "gitBlob": "5710f8db2a86142d59e0475469d2ffa7a1aaa081"
+    },
+    {
+      "path": "scripts/build-server.mjs",
+      "sha256": "d8695f85acd684579957c3c9c9eaae5676a96a1fa0318f49e79037184f75d4d7",
+      "bytes": 1156,
+      "gitBlob": "63d621f04f92b5c6df286db298feca3b7424ad72"
+    },
+    {
+      "path": "scripts/build-solar-runtime-candidate.mjs",
+      "sha256": "815f7108a6bbb2cb7ffbeb4aca27b8ae6d7007b0ab9d503b1b47b791f64814b9",
+      "bytes": 4262,
+      "gitBlob": "f873a1c53c0a4bcd67cc0b9b1d16faaed50c5f53"
+    },
+    {
+      "path": "scripts/build-whispers.ts",
+      "sha256": "2ebbcd6dc8022ec97abd10aa348a6a0278feb86f2170f37cc3b4094a94f2cef9",
+      "bytes": 6608,
+      "gitBlob": "fcde7286a9e4996d32b9e2f15164fec420462d87"
+    },
+    {
+      "path": "scripts/build_verifier_dataset.py",
+      "sha256": "4d6eb93bdf510bf47e10233c39412edfde8b6a67818cecdee9ff775d44067641",
+      "bytes": 2167,
+      "gitBlob": "39b62c36d1a9ba1b3bb15b816ed914d9ba5788ee"
+    },
+    {
+      "path": "scripts/c10/build-local-kit.mjs",
+      "sha256": "10b840e90f4e5fd11efd5e3b99c4dbc7094c30691c38bde9f3f615b46499d880",
+      "bytes": 14494,
+      "gitBlob": "b990654e658da09740232d7c593b6450f0034bf5"
+    },
+    {
+      "path": "scripts/c10/build-local-kit.test.mjs",
+      "sha256": "2f8631572724fb9f37cd64d5f1bd9c8034d648aba1f51db53a8c57607c3caf2e",
+      "bytes": 1429,
+      "gitBlob": "4b949b0615d71bc42986d078c3f9396190d0c757"
+    },
+    {
+      "path": "scripts/c10/consumer-smoke.mjs",
+      "sha256": "ecf281b8b79a96ccac7b4d27016b8b3ae69adfa5240e2c105109d3b9071bfd7b",
+      "bytes": 11129,
+      "gitBlob": "ab7f1bc484e99aac2d9ef51ba60efe244096d3b9"
+    },
+    {
+      "path": "scripts/c10/consumer-types.ts",
+      "sha256": "990668677d00c605a35dcd9f4950d20fdb5fadd89a06d57141eac4ca780f3632",
+      "bytes": 1356,
+      "gitBlob": "600272479d79fe2579693faec7151a82557cf4f9"
+    },
+    {
+      "path": "scripts/c10/prepare-source-preview.mjs",
+      "sha256": "b26a74346e30796be3fe3cdebdfbf89f2760aa797729b6bc5b230aa00170c912",
+      "bytes": 5604,
+      "gitBlob": "f23de4fb8f73c7c5d95e78ce4024ea720253ab4f"
+    },
+    {
+      "path": "scripts/c10/verify-local-kit.mjs",
+      "sha256": "3d06eddb6cb2530f6cd8847acf42ec5e92a4a927424d47ea4aa7be555da0750d",
+      "bytes": 10401,
+      "gitBlob": "8a59e70a4ff76c4c1360a63c6fef20de88357700"
+    },
+    {
+      "path": "scripts/casimirbot-mcp-provider-conformance.ts",
+      "sha256": "247af0f700ad256e6efa6ac30daddea4f4803daa9ed446780ec5affd925986bf",
+      "bytes": 272,
+      "gitBlob": "e506eaac1b6a08782e2597aa52be050f445bad01"
+    },
+    {
+      "path": "scripts/check-interface-i18n.ts",
+      "sha256": "224cc83b7d1f0333ab6610f3ed2f648ca96f35f9486954d5af90de1325d7a0a6",
+      "bytes": 6280,
+      "gitBlob": "d95aa43bc9b0245f45bde75b82091a03fa772dcc"
+    },
+    {
+      "path": "scripts/check-public-claim-disclaimer.ts",
+      "sha256": "c679181f4535fdf616eaf2c51085f0c13a0b0f9e31210c62905a34015d5534c3",
+      "bytes": 1222,
+      "gitBlob": "1a160624526ef2a43ac8497d20f06a743183860b"
+    },
+    {
+      "path": "scripts/check-slice-path-bounds.ts",
+      "sha256": "7c7e45afea520a223b7e8a5c22ba9f36da1dc762f662a1878ba75fc444ab2b42",
+      "bytes": 2240,
+      "gitBlob": "aa682d6f5a161ae900126a96c7943eb5ade6a025"
+    },
+    {
+      "path": "scripts/check-warp-ultimate-readiness.ts",
+      "sha256": "1e5ace0c9f2f16166c96a2a3a5b9ac5718c19812843c9e8f807d8637c3812491",
+      "bytes": 1734,
+      "gitBlob": "65d8323d503a5ac64797d7b04f5a39dfd834acf5"
+    },
+    {
+      "path": "scripts/ci-reports.ts",
+      "sha256": "b582e015f01c637a7c10be4c98a94d3c3285e58b1d68f1726e61172629dca718",
+      "bytes": 18297,
+      "gitBlob": "6ab6042ae5943c6406430c38e003b650fa7a5295"
+    },
+    {
+      "path": "scripts/civilization/acquire-unga81-submitted-pdfs.ps1",
+      "sha256": "e0525fc73a884314391db7bf7e0dc9c0835ecfcd49fabf4ce9cc2d9390ac706b",
+      "bytes": 5943,
+      "gitBlob": "b2819228d6e4387ac61252fe9ab38bebd4775286"
+    },
+    {
+      "path": "scripts/civilization/audit-unga81-extracted-text.mjs",
+      "sha256": "767459100b56cdc16031205e2467284912ee46f7791f710e833f85a16356e218",
+      "bytes": 1966,
+      "gitBlob": "b2481faf39c9221b07869088fa8c09e1c124c2bb"
+    },
+    {
+      "path": "scripts/civilization/audit-unga81-ocr-candidates.mjs",
+      "sha256": "e70aeab9b666953c7262914e018c6571d9170194bd95bdaaf1104a56abc3ca42",
+      "bytes": 2658,
+      "gitBlob": "5d18714226495f16e78fc5876dc67031d7df2aab"
+    },
+    {
+      "path": "scripts/civilization/build-unga81-submitted-page-leads.mjs",
+      "sha256": "aeef4ef9eb03f33685870782c6deb41cb9fe7121b592e605ccbf3b2671d30f4a",
+      "bytes": 4065,
+      "gitBlob": "bc731af8e538df00c1189f6b811e9a8871b0da52"
+    },
+    {
+      "path": "scripts/civilization/ingest-unga81-official-pages.ps1",
+      "sha256": "f0e3a063c58a6a2465b5cb0887db3a671241576eb16d2dd54770c7637974f9ad",
+      "bytes": 3648,
+      "gitBlob": "85af0f149c96a407c0cb7ab266980796f4d9aa66"
+    },
+    {
+      "path": "scripts/civilization/ingest-unga81-transcripts.mjs",
+      "sha256": "ddb06c9e810f980924c4aabed2e60d3efee1256077e60ee05b2a4b776593eac5",
+      "bytes": 5513,
+      "gitBlob": "4c4b116d0f865e50b7e880831fbe33822170c145"
+    },
+    {
+      "path": "scripts/civilization/prepare-natural-earth-country-bbox-index.py",
+      "sha256": "f13df40c1c2f53758f89e85087f0e7f756b51a6e841a06dd06c3ab6907e4d75d",
+      "bytes": 5217,
+      "gitBlob": "694d42ca67f3338ba8c4633ae5d0cac5a504c2c1"
+    },
+    {
+      "path": "scripts/civilization/prepare-natural-earth-lakes.py",
+      "sha256": "2bb00951e5ae1dea807061b1039866ba19986506d14c18856ca3428418166e3b",
+      "bytes": 3484,
+      "gitBlob": "42a54eeb010b159ee773f754417defc95a507139"
+    },
+    {
+      "path": "scripts/civilization/prepare-unga81-review-packets.mjs",
+      "sha256": "701258a5738154705f9cdb845518968fbb3f1955cfcf5adc7c212d776358ff48",
+      "bytes": 13466,
+      "gitBlob": "eb002428f529e6926997976e88356c9237546269"
+    },
+    {
+      "path": "scripts/civilization/recover-unga81-pdf-ocr.py",
+      "sha256": "66eb75282c72b712ca7326649e172780a742e6ecc8a6acf6793b6fd7bb68d3b9",
+      "bytes": 3145,
+      "gitBlob": "58c53780c8eb25f0d3df1e0161494e197940dc87"
+    },
+    {
+      "path": "scripts/civilization/unga81-text-quality.mjs",
+      "sha256": "11240fecdac1773ee45a76f7f9af3d48802123616c5c8d5baf145d0025767b21",
+      "bytes": 1485,
+      "gitBlob": "ce5a4b494dc92b245a793260ee210ab27f5b0aa9"
+    },
+    {
+      "path": "scripts/classify-helix-public-ui-controls.ts",
+      "sha256": "f73da91137016b4afef49cdc8143b4c5e61dc67e9bfd07af027c3e0422e50c9b",
+      "bytes": 7021,
+      "gitBlob": "14d79d888c9d6e1fda9571fb3bf813d8882edb73"
+    },
+    {
+      "path": "scripts/collect-ideology-node-ids.ts",
+      "sha256": "ae594caf53fafa7e9766d28319288f048ef1b1499a8b408c943b4a708acd5ce6",
+      "bytes": 1070,
+      "gitBlob": "776ebc287737c1597ceb5689fe462ddad0ab9e4e"
+    },
+    {
+      "path": "scripts/compute-toe-progress.ts",
+      "sha256": "cab6a9f02be101e99348a0f215e4323b0b8d337fc4e641badf61611e2a90851d",
+      "bytes": 19538,
+      "gitBlob": "56768ca83717878d73dd15c18755544df142c544"
+    },
+    {
+      "path": "scripts/convert_gsm8k_to_generations.py",
+      "sha256": "1fa35f629a2e699bc6a1b4cc148f87bbb53cf783e49a659f6f902db9c8ca54a2",
+      "bytes": 2113,
+      "gitBlob": "961cd5b7aa891313b30c5c83edf3d73f9368773f"
+    },
+    {
+      "path": "scripts/curvature-bundle-capture.ts",
+      "sha256": "6463b65e75e9af578adba030d52d6a9143a7e99fe0793d038298cbfa76dc3087",
+      "bytes": 5253,
+      "gitBlob": "287066ac78e17260f5a02c06ae6a7d85b7fa6223"
+    },
+    {
+      "path": "scripts/curvature-bundle-validate.ts",
+      "sha256": "993f264c32dc7d97f18bdecee95dd79c23c57f6d8b520b9ec64d479544eed28a",
+      "bytes": 2308,
+      "gitBlob": "95529c05074fd77da236a1fa175f673077e501dd"
+    },
+    {
+      "path": "scripts/curvature-congruence-check.ts",
+      "sha256": "40fdbaadc828f2dbfe74930669012ec114a0d8be8da9135cee261c0d7bca92fb",
+      "bytes": 66098,
+      "gitBlob": "4f027b51fa32d892d75394c629a983d5415dfbee"
+    },
+    {
+      "path": "scripts/curvature-leverage-benchmark-ladder.ts",
+      "sha256": "8ba8523bdd859dfc57758b20f50bbc08bcfc982a7bc1353703b810e597f7cbac",
+      "bytes": 23437,
+      "gitBlob": "b8a9a20f329153e8f00e353d4b100018b896406c"
+    },
+    {
+      "path": "scripts/curvature-leverage-benchmark-sweep.ts",
+      "sha256": "f7029811be5420813d1162cd57da819a39e7652f6bcf7db432df23b409bb43a2",
+      "bytes": 8828,
+      "gitBlob": "19a53096467c770f01f64f7551903ae95a3dfcde"
+    },
+    {
+      "path": "scripts/curvature-leverage-full-solve-report.ts",
+      "sha256": "da101e8df9efe4535c1db1f88c32d57e3702808be839d710122e4e2445ba2ef7",
+      "bytes": 11218,
+      "gitBlob": "93878d84467ddb459eb3988fa6cb0c40eadb3033"
+    },
+    {
+      "path": "scripts/debate-harness.mjs",
+      "sha256": "cf9e5b6be71e422e00b2e8f74a550f446548baa92802c17ae5d191a38dc5924f",
+      "bytes": 4360,
+      "gitBlob": "e7d212fdd9e93a8096ad24164fb0c0229e95417f"
+    },
+    {
+      "path": "scripts/deploy-clean.cjs",
+      "sha256": "9d94e5cf37a5f12b9e67054a902849989bb56e57b49bc48933c993c7c8f75b2a",
+      "bytes": 937,
+      "gitBlob": "62a8440d2e9a5af2ebd74387ff18b8fb88432a7c"
+    },
+    {
+      "path": "scripts/doc-coverage-audit.py",
+      "sha256": "cbd5f790f44ccef8f746a7a43ec194600e86a073f4e4d0b80f309dfc823bd2fb",
+      "bytes": 4442,
+      "gitBlob": "276aa62119dae087dc6cb797bd5254b8352f41d1"
+    },
+    {
+      "path": "scripts/doc-equation-action-generator.ts",
+      "sha256": "e8ddae8c1874d31259ae8821a22f3136b5e05830fd3bb82503ee4d415660251c",
+      "bytes": 5298,
+      "gitBlob": "61fe61b5a97e9452ca668dfaa05f6bbbb62caf1b"
+    },
+    {
+      "path": "scripts/eval-smoke.ts",
+      "sha256": "7e705fb85e73a343d40114abf4d9f5f47f1165dee13f11c33f33fb9b1c4d007a",
+      "bytes": 427,
+      "gitBlob": "d5ebc302003339854061ad0ec288f3a0122d1a32"
+    },
+    {
+      "path": "scripts/extract-ideology.ts",
+      "sha256": "b14360476d76974e5c24f5ecd5d45b570684d91345785b27a37084d75bf54b52",
+      "bytes": 2615,
+      "gitBlob": "0b42a47354a0a50831d89b3fd34d0a9d8577afb9"
+    },
+    {
+      "path": "scripts/extract-svg-labels.ts",
+      "sha256": "34b53410f1da24d0e99bb8a328f4b320b6bc6f75e9b59563fd6da7d2f232be26",
+      "bytes": 2960,
+      "gitBlob": "e885037d839c5f25d1fd6f8f5c2eece9ee7e9f53"
+    },
+    {
+      "path": "scripts/ferrofluid-mcp-client-grant.mjs",
+      "sha256": "eb0a88fee82b0473ea7f1e523e022f7ef229e3a2499711974c98cb462add9466",
+      "bytes": 1506,
+      "gitBlob": "360a10bb3b0600578b0294d3786b90ee6ea4fcaa"
+    },
+    {
+      "path": "scripts/fixtures/helix-gpt-live-proof-browser-init.js",
+      "sha256": "3694353e0db8cf46bda7f6658fe173acb49f2f300f70ebd9b5650ab2153da07f",
+      "bytes": 2216,
+      "gitBlob": "036fd9101cc96f82fd5df9f0dd42073daf552f9d"
+    },
+    {
+      "path": "scripts/generate-doc-equation-actions.ts",
+      "sha256": "924487ebb9caccb56312f8bb217b6c780f4fd1f4cb1fbea501d343650ff3a66d",
+      "bytes": 2635,
+      "gitBlob": "3b53b2febc3e10e6798264b676c3765e61ffb3a7"
+    },
+    {
+      "path": "scripts/generate-doc-metadata.ts",
+      "sha256": "a65bf93e050092c432e712e167cfb1b61d6695ff457c61277c6a119d275f7bc3",
+      "bytes": 1998,
+      "gitBlob": "dd544024cbf6d644bb5ba30e2e573242c5bdc608"
+    },
+    {
+      "path": "scripts/generate-g4-decision-ledger.ts",
+      "sha256": "825f9bbf68ef6f5733f6d34ca30070a02e0efffc90cddfd4a078ebe84cf4d8a4",
+      "bytes": 14739,
+      "gitBlob": "6e68da031a92c92b87865dcc9793878eae62662d"
+    },
+    {
+      "path": "scripts/generate-helix-public-ui-control-catalog.ts",
+      "sha256": "74c5b1d8e346c4c72ce53b15b6a49b89232956925c27ba1bc79e96778cdd3111",
+      "bytes": 2205,
+      "gitBlob": "1da41b18ac7028e557148747a482aa398c8c72ee"
+    },
+    {
+      "path": "scripts/generate-tiles.js",
+      "sha256": "4f2a8d3ed30e27a20da9cb88250cb46ea4cf4a3fa46f9786dec159e9551c07c0",
+      "bytes": 1238,
+      "gitBlob": "5fe336d62a49d7b0c0d58c73c5e5dfeb5bbbb95f"
+    },
+    {
+      "path": "scripts/gr-perf-sweep.ts",
+      "sha256": "c8efd8e99d9832b0e860936f47402c145e010dd9cb4b6017bc743bdd631a4bb0",
+      "bytes": 1205,
+      "gitBlob": "230af9ca3a4b88a1cebd7030364d4374fef0466b"
+    },
+    {
+      "path": "scripts/guard-helix-core-deprecated.ts",
+      "sha256": "a465e69ed0be350756c32c71f0043c8f0e418a4e20885dc848972bc5aea02320",
+      "bytes": 2306,
+      "gitBlob": "7bb1e124dd9fc6d61ded537e0f5ef5ca581b889f"
+    },
+    {
+      "path": "scripts/helical-phase6-ab.ts",
+      "sha256": "e8b3188fd1b080716577a3a3c84a593c33c9a2cc49452807d7e5f7cef13d8e99",
+      "bytes": 31527,
+      "gitBlob": "928941119892746469da9a1a052f73bf07397184"
+    },
+    {
+      "path": "scripts/helix-ask-agent-eval.ts",
+      "sha256": "c928487e0153e6724809ea987abd44f3e0ea09aadb93085fa793363cd9e9f0cd",
+      "bytes": 8739,
+      "gitBlob": "0d73ceb8523df1054794279c8d35370ebbff2e32"
+    },
+    {
+      "path": "scripts/helix-ask-api-parity-probe.ts",
+      "sha256": "ceaa756274ba4e43dafa8797ea9407d81583f6625badf8435e7d8b35beec70d9",
+      "bytes": 15587,
+      "gitBlob": "2c160cd102abfd33d437f09d23b7932d2fa2094e"
+    },
+    {
+      "path": "scripts/helix-ask-audit-write.ts",
+      "sha256": "38de81ffc34cf95271674d518809a6f3864bd0da239eada28c46da535d66bd45",
+      "bytes": 3564,
+      "gitBlob": "5427f34c92b86a1f3db248fa56a16f66846eff4f"
+    },
+    {
+      "path": "scripts/helix-ask-audited-reasoning-example.ts",
+      "sha256": "7deade6f324e267f144b1830bf3fc03bb48e027a80fd2521489391ae1d7e9ae0",
+      "bytes": 10481,
+      "gitBlob": "105eee616f036902c146aa12d124b21429c68c12"
+    },
+    {
+      "path": "scripts/helix-ask-availability-precheck.ts",
+      "sha256": "0166e08a1e69b2d197b5c4380999fd929c235cc2a98688a0ee1679393d560e62",
+      "bytes": 3207,
+      "gitBlob": "4b38d614f3136d8c30d07e0d3bd3e779f70ef832"
+    },
+    {
+      "path": "scripts/helix-ask-bridge-mine.ts",
+      "sha256": "6bc78974aa287814f7ef1af81e28767b24a4a479a22d569092e9e09a72917f4e",
+      "bytes": 5919,
+      "gitBlob": "262daf096b4fc8de159d92207fa3860873f92d60"
+    },
+    {
+      "path": "scripts/helix-ask-bridge-normalize.ts",
+      "sha256": "19ec7fdba01b6d4eed8412342205e647abf09947023e5d3c138681e07c17e801",
+      "bytes": 1616,
+      "gitBlob": "f4cb18011855e82756bbe15dc41caec63169d26a"
+    },
+    {
+      "path": "scripts/helix-ask-capsule-ab.ts",
+      "sha256": "ed4f57c46dc7701ae2ae7a26c1811bef315ba03be20567ddce96721f8598bf51",
+      "bytes": 9050,
+      "gitBlob": "13673d1beb98bfa459eeb21fe45a0492631957cf"
+    },
+    {
+      "path": "scripts/helix-ask-codex-methodology-debug-batch.ts",
+      "sha256": "bab0d9fd9d080bf5aac0ca7b08877993a90fb1e1b6428048e41da00fd5a5cc80",
+      "bytes": 28741,
+      "gitBlob": "335a0cbc846a6bcd848be523c77d1828c3d79909"
+    },
+    {
+      "path": "scripts/helix-ask-codex-workstation-release-validation.ts",
+      "sha256": "dfe737b5a9767a04e83407f2b23425edb56e173182689550cb8fd59d633d8c11",
+      "bytes": 20980,
+      "gitBlob": "9e33265bdf7dc4670ecc5ea4834924afe16ed8d4"
+    },
+    {
+      "path": "scripts/helix-ask-composer-v2-live-gate.ts",
+      "sha256": "33ed7f4dcd201b09f5d5538e85cfbe7899334efe36630fbe15fb50edd8a7df11",
+      "bytes": 9419,
+      "gitBlob": "89700ab38465a8ba54f44022d48e475bc071a9e1"
+    },
+    {
+      "path": "scripts/helix-ask-compound-capability-live-probe.ts",
+      "sha256": "8fc67da039e93ed6ff92ca485de4e07578766ea1cfe06b7bdd05688209d6c230",
+      "bytes": 108049,
+      "gitBlob": "e42aa43f185c5bde29757ef67558295e63ebd6e8"
+    },
+    {
+      "path": "scripts/helix-ask-concept-audit.ts",
+      "sha256": "4ceb8ad13e92812f6aeedfac3aa500c9f07b187d5e66a1443273b036ce04e5de",
+      "bytes": 17729,
+      "gitBlob": "4b0e7fe2d5ff05dec5206a876430a1944b555758"
+    },
+    {
+      "path": "scripts/helix-ask-crossover-ablation.ts",
+      "sha256": "a10b3b1f9de0ba53e09caa151c5ed761667d5bce1c4298b631d4f2071261dd30",
+      "bytes": 24136,
+      "gitBlob": "d9bf21ad72cf9140e9c9e68aa559393519738680"
+    },
+    {
+      "path": "scripts/helix-ask-differential-mode.ts",
+      "sha256": "5bbd8de5a1e918c00ece3aceddf665656a632280346ea6a08d7ec23a87bc2c32",
+      "bytes": 26361,
+      "gitBlob": "fa2d9a3e3c49977b623c9a3eb0263ca74ad57ab0"
+    },
+    {
+      "path": "scripts/helix-ask-discipline-check.ts",
+      "sha256": "1937602e8e9ef96d319f8fb6d31cbd1fff87803c3fd558c80cdeaa80ffbc8d76",
+      "bytes": 26232,
+      "gitBlob": "6bd1ad2ccadec060647c72404b3d1a377099e1d8"
+    },
+    {
+      "path": "scripts/helix-ask-dot-debug-loop.ts",
+      "sha256": "48d972868151acaaa88087f4bc31cd2182714a5882bf7d17fae4329bdb664ec9",
+      "bytes": 15324,
+      "gitBlob": "ed30892a97a4b359f445d9ae7bb0a49452892b42"
+    },
+    {
+      "path": "scripts/helix-ask-equation-benchmark-matrix.ts",
+      "sha256": "98e95068ea3dca07ea2eb95431ff213be2e9715fe9bc17df7efd9406db436576",
+      "bytes": 11252,
+      "gitBlob": "569fec22b4e23825dfa73b691de25f9fe444dddd"
+    },
+    {
+      "path": "scripts/helix-ask-equation-benchmark.ts",
+      "sha256": "a6e3c43151ed1c61f93a75e40b39d7988dbee03629a9ce646e0bfb761cbff52e",
+      "bytes": 11202,
+      "gitBlob": "f412bfc26fbdff706dc51e3d2644dba2d6859a93"
+    },
+    {
+      "path": "scripts/helix-ask-evidence-cards-ab.ts",
+      "sha256": "5189dd130ecb31f4456fb6113bbf28c91d1164f55b1c8691081d46d94437f929",
+      "bytes": 8729,
+      "gitBlob": "9d3ac1b362045025b6451c7b2523df2a68c6ab51"
+    },
+    {
+      "path": "scripts/helix-ask-evidence-cards-analyze.ts",
+      "sha256": "1cb979ae6c1691f4e46cd9dd47e38d9bc74f84fce873c06ff34fe855301a6a81",
+      "bytes": 14799,
+      "gitBlob": "337302152b3fbc038f82a30a1d9ef8eb52e5d1cf"
+    },
+    {
+      "path": "scripts/helix-ask-evidence-cards-run-variant.ts",
+      "sha256": "6ee6c108aa657c6692b28d326c6995a79dd75206f0a8705b05d5e7ea27c1e7f3",
+      "bytes": 3691,
+      "gitBlob": "c7a582a2d308c4496ec06d5aa8088d7c21a71a0b"
+    },
+    {
+      "path": "scripts/helix-ask-fast-quality-promotion-gate.ts",
+      "sha256": "33bd69ddf1880c9cb295441ec72734555be6ca4c575b704a82a0d62dcdff9465",
+      "bytes": 6125,
+      "gitBlob": "65081e4beb2939bc497b6233f68f38e254aa13d1"
+    },
+    {
+      "path": "scripts/helix-ask-formula-debug-audit.ts",
+      "sha256": "17d526e9cde33ba306121109b89c944a45989c59fb50d7ed450978300b260a2e",
+      "bytes": 12244,
+      "gitBlob": "2a58368201e8c70a68f2f9e3c1008d564a2a118e"
+    },
+    {
+      "path": "scripts/helix-ask-goal-zone.ts",
+      "sha256": "f47e9ce42978e2e27eb12e138e8f063a83c9b55904578c52868bdd4f1808e173",
+      "bytes": 19356,
+      "gitBlob": "6a4ee5793a130944bafda7a6ffe53a9257386df3"
+    },
+    {
+      "path": "scripts/helix-ask-gpt-live-codex-proof.ts",
+      "sha256": "2a20d0473cab3ecd08c577a94abfdddc177632b9009d0f3e5c45d87ba7d25cde",
+      "bytes": 53901,
+      "gitBlob": "63657a105ce8c684b6aa3277a4872647b06bd496"
+    },
+    {
+      "path": "scripts/helix-ask-image-lens-acceptance-probe.ts",
+      "sha256": "31dcb2a2de3eb4668442e7102998014ee26b9e919e9633683f7b1986f061f178",
+      "bytes": 12101,
+      "gitBlob": "87579235b6fb648df785562da9deb4c5fa6119c0"
+    },
+    {
+      "path": "scripts/helix-ask-live-spine-smoke.ts",
+      "sha256": "56ed3f551da7d07ea3a8aa04c868131f8531b09cab947f598fdf2253a01664d6",
+      "bytes": 70807,
+      "gitBlob": "63f1eccb74391176427e4e2797b799df61bb2f3b"
+    },
+    {
+      "path": "scripts/helix-ask-math-router-evidence.ts",
+      "sha256": "81498a07d86cca36ab6d3f88dfb31d422166dfa22f589c8a440efbf843956048",
+      "bytes": 18463,
+      "gitBlob": "b11c2f59e1d231304658715cb2461c959d212c48"
+    },
+    {
+      "path": "scripts/helix-ask-multilang-golden-gate.ts",
+      "sha256": "11c47952e0bd3e117d3a9fcfeb973bfcbfea9f8b129a2247e10b01eae0d66da7",
+      "bytes": 16097,
+      "gitBlob": "5490347f40d6126eafa8c6f6822a9b2f93ebeb83"
+    },
+    {
+      "path": "scripts/helix-ask-notes-create-debug-acceptance.ts",
+      "sha256": "422103c2cc6ca02b80c9bc3fd5e38b13e4fbe39514d42883f01b118fbc29f06c",
+      "bytes": 11863,
+      "gitBlob": "54c927eedad300b1ef5e6a44f774a1d6a8bc1946"
+    },
+    {
+      "path": "scripts/helix-ask-observation-coverage-audit.ts",
+      "sha256": "4b157e7bc176b653c61357224607148889f138baabc252f327b2ae6488b54518",
+      "bytes": 8438,
+      "gitBlob": "f68e20efe03134ddcdd7b7d84e031426d5bd143d"
+    },
+    {
+      "path": "scripts/helix-ask-patch-probe.ts",
+      "sha256": "533d04a89f38f20f7a12e2550c9ebd6709b31550303f6dab2c6fdf35a37ebeb8",
+      "bytes": 42174,
+      "gitBlob": "2dd964a9f219bf4bdc6af9b2717c908b19e866f0"
+    },
+    {
+      "path": "scripts/helix-ask-prompt-quality-probe.ts",
+      "sha256": "423a7a544d9f82c37f20f96294510894a5de51160f720a17864b6077d616312c",
+      "bytes": 24885,
+      "gitBlob": "5f2146f7bf7dd97f84cf3096edc42fe2592b5afb"
+    },
+    {
+      "path": "scripts/helix-ask-provider-gateway-trace.ts",
+      "sha256": "cf6e39c666ee03d7c5b52a54ee89bd4118fa01f12d918b312e4ba7dbec5b06c2",
+      "bytes": 76512,
+      "gitBlob": "1c3002e544b15a9e47b2a061602717599619dae6"
+    },
+    {
+      "path": "scripts/helix-ask-quake-frame-loop.ts",
+      "sha256": "fe2eb9dcd41ef55fbdf6e00f648d5fab560aa226c831c8f19442ed78b74cd79b",
+      "bytes": 11776,
+      "gitBlob": "37e7b8bc183d0b2154fd4efd4e871eab28b6999f"
+    },
+    {
+      "path": "scripts/helix-ask-quake-weight-tuning.ts",
+      "sha256": "d7444bffd407966c9849fa9c7ff830c45fd34a8db99ac7c1cf3a7e332c7c5169",
+      "bytes": 22472,
+      "gitBlob": "394964469f247831bd7d8765521b0062644efdf1"
+    },
+    {
+      "path": "scripts/helix-ask-realtime-doc-conversation-probe.ts",
+      "sha256": "fbb6e86981854e8bb3a60e12f335b3991927b3e82952bab327f155d7f8b7c0c0",
+      "bytes": 40967,
+      "gitBlob": "eb9f8f22c9db5d22479e825ea420a0bc88601cf8"
+    },
+    {
+      "path": "scripts/helix-ask-regression.ts",
+      "sha256": "f5baf39a2885f5db431adcce2cff57e7f2f1722d80b1ff184691fee890663000",
+      "bytes": 29598,
+      "gitBlob": "6b597d42253f3e2e095c342295da156913f9e8ca"
+    },
+    {
+      "path": "scripts/helix-ask-research-workflow-conversation-probe.ts",
+      "sha256": "16c28d040870c958c88cf7f148088d150cc504dec1aa36ad466e54c355568b65",
+      "bytes": 43255,
+      "gitBlob": "ac42cc511607b4e9002386402de80eb453a22ddf"
+    },
+    {
+      "path": "scripts/helix-ask-retrieval-ablation.ts",
+      "sha256": "2a8e867787347dddb151f3f9ade81e8915eb45829afd5a00f71413f329d682a9",
+      "bytes": 55909,
+      "gitBlob": "c7dc522a6b97956c94d8cd7c2d70502d72b874ff"
+    },
+    {
+      "path": "scripts/helix-ask-route-inventory.ts",
+      "sha256": "d5285bc36bdc458809be9fae0aab4accc78db15f43a7871ad6653ba26d702ce0",
+      "bytes": 7081,
+      "gitBlob": "cd9ebbe49bfe32a7d2471f4dad045438be326747"
+    },
+    {
+      "path": "scripts/helix-ask-runtime-authority-audit.ts",
+      "sha256": "ae28fc4057fef1c21aa782910ff40bce16891a678eb6a67767ada907b33eeb62",
+      "bytes": 13129,
+      "gitBlob": "123bff373f256ccea5274fb86ca201793393f2f0"
+    },
+    {
+      "path": "scripts/helix-ask-runtime-goal-probe.ts",
+      "sha256": "3e1c19b4dbf55a468f9a84bb0c1f648646f22852356c7b67db432f053b95b9af",
+      "bytes": 27752,
+      "gitBlob": "d1b68bfcac71fa4f4ed4a8bc8618def59ba5ae37"
+    },
+    {
+      "path": "scripts/helix-ask-scholarly-measurements-live-probe.ts",
+      "sha256": "e54d68a716a8129701c25111621319322dc7daa1fee0f65116d2b5f02d210877",
+      "bytes": 12608,
+      "gitBlob": "d5249872c36054568b9562fb4043dfff87477516"
+    },
+    {
+      "path": "scripts/helix-ask-scholarly-pdf-workbench-probe.ts",
+      "sha256": "265e487b9f67c13b347ba93237c9cc13eb70c4b34a12b20d5dd0ec5bc9030db9",
+      "bytes": 15172,
+      "gitBlob": "3481867837160d24aadf58b8c0e1a3957d54799e"
+    },
+    {
+      "path": "scripts/helix-ask-sweep.ts",
+      "sha256": "5e48450799e932281c760bfd2c9f7f8cda21da7fb097b8f760abeb421277cb63",
+      "bytes": 31984,
+      "gitBlob": "cc45665f3799dcba0f8d98a317ae9d10815444bf"
+    },
+    {
+      "path": "scripts/helix-ask-terminal-writer-audit.ts",
+      "sha256": "8f39a9f99c889d0436dc399a9f652086edabe82ce2e9a3c50fe392b502fe0463",
+      "bytes": 46,
+      "gitBlob": "0171bd88066d27218369d91d4d725b15c2d9bbb4"
+    },
+    {
+      "path": "scripts/helix-ask-test-type-runner.ts",
+      "sha256": "6bfd291db7bdb2e6ccc083cd7548e62137d059308ded1f9c0d5d08e7bebf0972",
+      "bytes": 7612,
+      "gitBlob": "47229359da43eb609b68895ad3e9828f294c8d20"
+    },
+    {
+      "path": "scripts/helix-ask-tool-chain-matrix-probe.ts",
+      "sha256": "35dc704620ba4b18fa1ca45c9e18e982fc0d71ddd3ca69474233957dc067df84",
+      "bytes": 75468,
+      "gitBlob": "bd4a206bf243a98fa786c4b0efab12f1ad5f5961"
+    },
+    {
+      "path": "scripts/helix-ask-top-debug-smoke.ts",
+      "sha256": "b4817f6de326be711e1830d94acd0a2811eed5eea66f5ce50680450aa392cbdd",
+      "bytes": 11941,
+      "gitBlob": "bd93b3ab617ea9e3348d37ef65e6d544e9b97d7c"
+    },
+    {
+      "path": "scripts/helix-ask-tree-docs.ts",
+      "sha256": "272d4ba812094556ef6a10a59a5af2d1bce0c4486598d4a05e42ca07d6835af9",
+      "bytes": 4203,
+      "gitBlob": "6c530ffcbb52b115d24986b6c20ca6a05f3dbef1"
+    },
+    {
+      "path": "scripts/helix-ask-ui-debug-parity-harness.ts",
+      "sha256": "3fa54fcca16e9dffca8fc8168990771c046fe40cf5831745a36c39e98093a595",
+      "bytes": 67820,
+      "gitBlob": "837a8045913fbe18ed89db5d4c006db2e4619e38"
+    },
+    {
+      "path": "scripts/helix-ask-user-prompt-corpus-probe.ts",
+      "sha256": "a4d788c72061865cd322a25e10ff16d37259daae66d42881c0f7041ebd25e907",
+      "bytes": 46292,
+      "gitBlob": "f58a7d7788d9373a996f2dcda19a53d3dc9cb531"
+    },
+    {
+      "path": "scripts/helix-ask-utility-ab.ts",
+      "sha256": "5ad699952f933a8195fe3d4fe0a7bd3f5f9bf508855f9ab42d57ae50e56e4dcc",
+      "bytes": 29974,
+      "gitBlob": "073d19b5c177b21361799be038ccf4e8f99291cf"
+    },
+    {
+      "path": "scripts/helix-ask-versatility-record.ts",
+      "sha256": "d16f33207f1f36cc4da82cc7362f7987b3b965df04a546ec82258b71ad2ce1b2",
+      "bytes": 107539,
+      "gitBlob": "a8e48e9232fc420b9de3875afb1f4b7a929da448"
+    },
+    {
+      "path": "scripts/helix-auth0-local-account-link.ts",
+      "sha256": "c34d924f840b61ca34ea156859169cfa250a9f4fbc02efc2d2c9af9797d2b7ab",
+      "bytes": 5636,
+      "gitBlob": "f9913188862f7dcf89ee293863ef38704eeab86a"
+    },
+    {
+      "path": "scripts/helix-autoscale-check.mjs",
+      "sha256": "24703f37a5ea64189bbd645250d318fc96821742c462795276c35655b0c60666",
+      "bytes": 2143,
+      "gitBlob": "d0e0e8a7b5fe2315605a0eeef4ea02793bb78bea"
+    },
+    {
+      "path": "scripts/helix-codex-mcp-oauth-preflight.ts",
+      "sha256": "df256a40adda5a0785158143d25eba8b0ddcee141cec56307079514c6be5f332",
+      "bytes": 10162,
+      "gitBlob": "92c2579267674c93ce7f6ec28378070bd25d9779"
+    },
+    {
+      "path": "scripts/helix-console-scroll-smoke.cjs",
+      "sha256": "c3a3e45d4294501c4a9546755fa2c542cc4b218aff6b4487d37d3382296c3980",
+      "bytes": 3548,
+      "gitBlob": "6fc3b4ec9baecb38d6bb4ee6db24a1aca833e29f"
+    },
+    {
+      "path": "scripts/helix-decision-bundle-verify.ts",
+      "sha256": "2b5fb4b9540461acdc2bf1b4fd82c56d75bb40757238e7019bea053bc162e2b1",
+      "bytes": 4446,
+      "gitBlob": "585689c9df692e477e43f61b9a0008abff99d257"
+    },
+    {
+      "path": "scripts/helix-decision-bundle.ts",
+      "sha256": "8ef494deab01f9a70c9e8b180b0bac4abedd043f7d3c241b8f25a5a74076d081",
+      "bytes": 5867,
+      "gitBlob": "dfb9c023b3e2eebf58ec7bf71802371eb5b2d162"
+    },
+    {
+      "path": "scripts/helix-decision-package.ts",
+      "sha256": "939e0911bd56eca5af978e9af74a6fca0d7c3ebc598bc77cd22ae2178c080c48",
+      "bytes": 25636,
+      "gitBlob": "6ac14fdcb85304f11846c189c8a422e599338469"
+    },
+    {
+      "path": "scripts/helix-decision-run.ts",
+      "sha256": "ca3f8c6a1b523321052ef8c157e1606647789a2c4b052aba50d2c3844a0716d5",
+      "bytes": 19334,
+      "gitBlob": "0238ffaa3016eabf04999000b77db7bde247149f"
+    },
+    {
+      "path": "scripts/helix-decision-validate.ts",
+      "sha256": "f1f80ff8c6be1f5441d4c39dbbb95986e1b53158c2ecdbff3d3366462c060be0",
+      "bytes": 10916,
+      "gitBlob": "1cf876522896fee017c98c77c42fbed3ca872614"
+    },
+    {
+      "path": "scripts/helix-dottie-situational-report.ts",
+      "sha256": "a6be13347e3aab336b7d6e4df70a427071a821395d33035a405cb11b442fba8c",
+      "bytes": 20621,
+      "gitBlob": "5405702c85c190b8e4e956a1443fe393fe38a78e"
+    },
+    {
+      "path": "scripts/helix-environment-capacity-report.ts",
+      "sha256": "5140681eeae75380a1a5df0e3a9e36039d2af9dcb02a873124dbbf6065d6d0eb",
+      "bytes": 2622,
+      "gitBlob": "4bb71cbd53ce13477b2181173c6be0ead2b04d54"
+    },
+    {
+      "path": "scripts/helix-environment-connector-live-acceptance.ts",
+      "sha256": "0daac0adab96382dd6de7c6a92d51c96fdb620be8414db1a9331c6bcb6651605",
+      "bytes": 36670,
+      "gitBlob": "a1b107e4d781ed602b069f6acf371ec09f299903"
+    },
+    {
+      "path": "scripts/helix-friends-voice-party-f5-acceptance.ts",
+      "sha256": "6964848721e7f294fba9a16557e82d5034145bcca409e3dffb4aa41463539037",
+      "bytes": 4415,
+      "gitBlob": "2219107ec673eb092d80007b2032bff3306f74be"
+    },
+    {
+      "path": "scripts/helix-g5-oauth-bound-room-report.ts",
+      "sha256": "793716836b7153fd11953602ebde21e1a21bb90728e3ce75cd9bf1644e71a787",
+      "bytes": 10449,
+      "gitBlob": "549f52022e17763733cf7787b2a3ca015219c08a"
+    },
+    {
+      "path": "scripts/helix-live-source-agent-goal-playbook-probe.ts",
+      "sha256": "89d161e475edcc8ce26a907e4549bbd3f26e1211a01a2d9d58f93b89e2e58601",
+      "bytes": 25470,
+      "gitBlob": "ce05b75af38cdaf5b3f84213308d14c024a73446"
+    },
+    {
+      "path": "scripts/helix-local-snapshot-stream-benchmark.mjs",
+      "sha256": "3e1a2f9d1ac6fac4e5f07d897af42d7f6374497f672eae0d34082aba3dc7bf7b",
+      "bytes": 2168,
+      "gitBlob": "9ef2363842a2d91b79250e79671928fb76cdf7e7"
+    },
+    {
+      "path": "scripts/helix-local-supervisor-origin-selection.ts",
+      "sha256": "5921643fde349e598d9b97acd977867553c4b7ac00f9a17a8df3c864cc117f03",
+      "bytes": 1891,
+      "gitBlob": "3f8e6ddfdac5bfefed473261929004da82e8ce9d"
+    },
+    {
+      "path": "scripts/helix-local-supervisor-post-bind-verification.ts",
+      "sha256": "8fec9fb85e186f6d7437739520c43ec57e36f3304bba25ed8b5da23891f2a993",
+      "bytes": 2088,
+      "gitBlob": "57ecc6e0235e960968b32ec6c873c7b08741b7e3"
+    },
+    {
+      "path": "scripts/helix-local-supervisor-preflight.ts",
+      "sha256": "d6f9388f1b409a6a95e22535d2f5879d60a2f3c94d88e0bb4537b63db1f221fa",
+      "bytes": 2128,
+      "gitBlob": "347e071789b5c97ad9807f544dbef85622a4b912"
+    },
+    {
+      "path": "scripts/helix-minecraft-arena-fixture-supervisor.ts",
+      "sha256": "b8bbb229b20acb9d645958b4529e8df597c2fc76398e336d0dd1cded3e9c0330",
+      "bytes": 20244,
+      "gitBlob": "e2f1f506e732fb1d7ef9ea43465b93893d8bd491"
+    },
+    {
+      "path": "scripts/helix-minecraft-combat-c0-arena-plan.ts",
+      "sha256": "0d09b0cb0b95855df9374cf03dd72b4ca0a42718a7880d7e12728696edb17553",
+      "bytes": 8913,
+      "gitBlob": "e964abfcd9b56778645bcdc153462aeaa1b3c7d9"
+    },
+    {
+      "path": "scripts/helix-minecraft-g2-ask-capture.mjs",
+      "sha256": "38431fd71c4f6da1513c2709d78b6a531c639dfffad8931772c4fa40249cb88b",
+      "bytes": 10404,
+      "gitBlob": "2a68bf30c267d99e676e68b30b515c37e5fb3305"
+    },
+    {
+      "path": "scripts/helix-minecraft-guardian-evidence.mjs",
+      "sha256": "94b8590d8093da8d39634c0e1cb313f651117954279275fa984fbef8485f8413",
+      "bytes": 3242,
+      "gitBlob": "e5b7703b8b86dfce0d80f53dfc9eba96c5dd6a12"
+    },
+    {
+      "path": "scripts/helix-minecraft-hud-foreground.ps1",
+      "sha256": "d5f0d00f454130ee541ed30439b63ff7cfb904b446c1c23164a7a067a8a5a37f",
+      "bytes": 2686,
+      "gitBlob": "689bea70fcca173d71466967c2efff74f7bd6e57"
+    },
+    {
+      "path": "scripts/helix-minecraft-launch-fabric-loopback.ps1",
+      "sha256": "2f59c683217832644f8d565389a74e42a89262559d79f08554455f4e1197bc3d",
+      "bytes": 43187,
+      "gitBlob": "129fc443fd5c499c2308dacabe24fb1ef9c50227"
+    },
+    {
+      "path": "scripts/helix-minecraft-live-probe-observations.mjs",
+      "sha256": "ff7d9028db25e4434c7150cb3b1fa9061b9b132fa4f2620bcbe5505bdff1027b",
+      "bytes": 3452,
+      "gitBlob": "0d3b93937c1276ed652471e83e859086323750a0"
+    },
+    {
+      "path": "scripts/helix-minecraft-local-command-session.mjs",
+      "sha256": "5cafcf7a535560a2f0f4662e693d37cb2bbb9fa506605ec4ba9f193664076460",
+      "bytes": 5723,
+      "gitBlob": "821f8e62448c9c8a06064713b283e2800612acd9"
+    },
+    {
+      "path": "scripts/helix-minecraft-local-player-session.mjs",
+      "sha256": "29a7b97914df0a2b1b69df5f8091a44d86492ea5f11df0db873951089b8bfa1d",
+      "bytes": 12960,
+      "gitBlob": "4915b913969a2c0c4faa5cafa2ef4d59674f11ba"
+    },
+    {
+      "path": "scripts/helix-minecraft-local-room-session.mjs",
+      "sha256": "22c0c96df1a2fb3504fb8532813c1e4256fc42eba0d2ccce64fed2f5b731f1d3",
+      "bytes": 14627,
+      "gitBlob": "16b731a5d2650a4c439cb228f3e886d420dd0c20"
+    },
+    {
+      "path": "scripts/helix-minecraft-local-test-client.mjs",
+      "sha256": "aa629366bfe6ccd91681bc72ca194146f93f0b8c8d6da18c1dfeef22dd9203a5",
+      "bytes": 3222,
+      "gitBlob": "12d01df6de4b2ebf776cad5b6dd0ad0d9d3ac9db"
+    },
+    {
+      "path": "scripts/helix-minecraft-nether1-n0-course-plan.ts",
+      "sha256": "6ce5fa2186827b9c8ab5be2816e12217415866c4e68c5e7abe89ef90fd6aceed",
+      "bytes": 13508,
+      "gitBlob": "66ec0040e30e1b807c9747f4c1e29b522907a22a"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-differential-audit.ts",
+      "sha256": "bcb536ea74f44692eb627e3e54e2c14f19390216023f7a0047d3e6a8d10d4813",
+      "bytes": 1446,
+      "gitBlob": "e9d2b5dd3a7ce2bf13bc472a0154f42b850bcdd5"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-differential-capture.ts",
+      "sha256": "a6051f95592a8b5fd6e409e60fad26a349b731a03d590852a4730ae8a295903b",
+      "bytes": 1112,
+      "gitBlob": "3f33edf440a7ea62bb6b48f5246a62a5fd4dd1a2"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-direct-diagnostic-capture.ts",
+      "sha256": "1a42441673041e92e0db519db2399774c72b4a860aa2ff18596ed25e2d45c450",
+      "bytes": 10577,
+      "gitBlob": "45de9aa512948ce1141d720a03735db8214ee9fd"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-g2-parity-audit.ts",
+      "sha256": "306d8c50055d95aaf5bf0b9cd8edd6fabbedcfbb4f76b68d10d23bff979bdf08",
+      "bytes": 1419,
+      "gitBlob": "f615fe087e3fc36eb727e934463c21557c551d70"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-helix-debug-capture.ts",
+      "sha256": "a2e7202701892f8dfa7b1a620193abc43e23e91f0af449dcb660e1eceff22447",
+      "bytes": 11599,
+      "gitBlob": "65e461fc52b3621ff9962e12bc18aab6461f8d3b"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-mcp-capture.ts",
+      "sha256": "a8edc9134c5f660bb2c2961b8749ed535b53172acf8673be3fd5a1d6e5befe51",
+      "bytes": 7338,
+      "gitBlob": "ec962ed4dd8ea79104816affa02a443b860994c9"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-pairing-inbox.ps1",
+      "sha256": "35c1d295f3aa5699c2d19825bfde7d4ebcc9755f0afba4b7d80265f5da9ad4a9",
+      "bytes": 1617,
+      "gitBlob": "9a96968a9ea50d003999a13634ec3e7209a28449"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-stage-autojoin.ts",
+      "sha256": "93f4c4225288b908693774935ce7222c3183c99aa25e9c01fad1c7b94655fd1b",
+      "bytes": 2246,
+      "gitBlob": "03d3eff8ff9ee785685a451e8fbe6845e1a36104"
+    },
+    {
+      "path": "scripts/helix-minecraft-player-stage-diagnostic.ts",
+      "sha256": "1217da13272b03c964c35e0aaa8e8e47cd6b4c347bf62292e2b66bbd18a08043",
+      "bytes": 9389,
+      "gitBlob": "9f2d908fe7f8ba993425e13d77650ad37f45c346"
+    },
+    {
+      "path": "scripts/helix-minecraft-provision-isolated-client-profile.ts",
+      "sha256": "39e41d5e98478ddd0727620e18cfe64cc128e33c5af2e5da1746e92d5236f07a",
+      "bytes": 7901,
+      "gitBlob": "0cf0e66742f510ac4b8d1e3aabdc398cb37dd01f"
+    },
+    {
+      "path": "scripts/helix-minecraft-resident-decision-capture.ts",
+      "sha256": "a3523ca55b25009d8db43703100b1cfeee4b1e4be11a77da95b6687dd6bfb908",
+      "bytes": 4857,
+      "gitBlob": "ba1dc38e7fe87e72935a1885661a03b25f506a1e"
+    },
+    {
+      "path": "scripts/helix-minecraft-situation-live-probe.mjs",
+      "sha256": "e940220c58168777f197e3eeb470c582d5735fd857789749f1e4c11f97332385",
+      "bytes": 53305,
+      "gitBlob": "5c3e4cf8cc6545e0ede06ef4b74728a643597bef"
+    },
+    {
+      "path": "scripts/helix-minecraft-start-fabric-server.ps1",
+      "sha256": "ffb809e837939ff552e6c158149caaa291ef6185bcc8b851d6dd372eb07a3e26",
+      "bytes": 11187,
+      "gitBlob": "70396a9091731cc02233550da27abb424751fcb0"
+    },
+    {
+      "path": "scripts/helix-no-go-closure-audit.ts",
+      "sha256": "61082d539d152db434cb5387ff9ad3b66bf50deb5f374cb38608bad40e613636",
+      "bytes": 8619,
+      "gitBlob": "fb038ec097912b503a040ec7aa48bf7912195c21"
+    },
+    {
+      "path": "scripts/helix-replit-parity-replay.ts",
+      "sha256": "904790511af7631678fc566ea2d84e444ab19b8afbe4745a3d74ae85a5cc621d",
+      "bytes": 18481,
+      "gitBlob": "628390410c09e67a137a57627aa60495f8943556"
+    },
+    {
+      "path": "scripts/helix-replit-parity-static.ts",
+      "sha256": "14f9b892ec52feb590e7f9173891f7240f474005d735ce034be9e26b74b71478",
+      "bytes": 7217,
+      "gitBlob": "d830510a7369befde55b6b26065dae2f26b8e678"
+    },
+    {
+      "path": "scripts/helix-shared-live-room-live-acceptance.ts",
+      "sha256": "ad7af8e6bd14e55bd41b28fa0fa66bd080dd6646cd6a0f23828910178426a413",
+      "bytes": 883,
+      "gitBlob": "a551f14d6b21c037a4af2cab27e5f9b8e86fd0fd"
+    },
+    {
+      "path": "scripts/helix-shared-room-presence-heartbeat.mjs",
+      "sha256": "648e7a550720f5dfd40d8172083e81256ba17488f1081c042b5723674bd5281f",
+      "bytes": 966,
+      "gitBlob": "a9149dcb52ec83ad633170401eeed074fa375f67"
+    },
+    {
+      "path": "scripts/helix_ask_git_tracked_scan.py",
+      "sha256": "d29379d264bd38be76b9e88221a54221b72711791cfee8e740d8d493f9eefab3",
+      "bytes": 6496,
+      "gitBlob": "32488b621945d428b57fcb71e6804c49fb74df7a"
+    },
+    {
+      "path": "scripts/hull-export-dataset-smoke.ts",
+      "sha256": "90ac07f500da5717ab6fed62edca0d5324e519b7f091d23bd29b814db2d90c14",
+      "bytes": 2723,
+      "gitBlob": "7bf4f05985a8d14d4a76b238b83d2f8e0f64f42d"
+    },
+    {
+      "path": "scripts/hull-export-writer.py",
+      "sha256": "e784dbf62f1a9b7126c0c97b821ab961e52efbc7cd1634fb05080adcf9f128ad",
+      "bytes": 5870,
+      "gitBlob": "cf2f819da5f57cdf6d658e874abb86108df8604a"
+    },
+    {
+      "path": "scripts/hull-mis-clone.ts",
+      "sha256": "1f13f8dfb7becd53e9a2ce8d6ce985747afb8a11634e4e38b1ac8e280693607d",
+      "bytes": 1733,
+      "gitBlob": "f6cfad86842c69fcf3ead9905bb7ba9658667ba1"
+    },
+    {
+      "path": "scripts/hull-mis-install-bridge.ts",
+      "sha256": "9686974641d1229648e3c8e148dd57518d75e3e6cc2ac59ec0638c2c59915441",
+      "bytes": 996,
+      "gitBlob": "e4f1a58d32beef40d820344d18685671fa92a3e9"
+    },
+    {
+      "path": "scripts/hull-mis-rollout.ts",
+      "sha256": "96a7873a64533505ba28eca97ec2e585f67b044444690853bd37b4ac8d811edc",
+      "bytes": 10649,
+      "gitBlob": "641da40fa1fedbc3ae7e50f98a38e6d3dac5af57"
+    },
+    {
+      "path": "scripts/hull-mis-service.ts",
+      "sha256": "c7e80fdc9a077a64a9627544e9734ee8369aae5ee9df47dd4ee5a4271006a2b3",
+      "bytes": 15082,
+      "gitBlob": "56de90f160e4d2cd49fe3de3a0f6492d39ab1c27"
+    },
+    {
+      "path": "scripts/hull-optix-rollout.ts",
+      "sha256": "6dedaf86ceeb27be5cd4ffc0f095d445e97181fae5e205518af0cc6f53520c10",
+      "bytes": 10238,
+      "gitBlob": "6f3acb5338bb0ff8b73b6e32d0bc288a498ad627"
+    },
+    {
+      "path": "scripts/hull-optix-service.ts",
+      "sha256": "f6ed9b9e047dfcf7b12b8a068afde6fa743c9fd59040c752234fd787c32572ea",
+      "bytes": 296642,
+      "gitBlob": "8b610112f4419d449cd358cca76761dc8edcdd2d"
+    },
+    {
+      "path": "scripts/import-discord-solar-channels.ts",
+      "sha256": "1d68d7a8c4b000ad8c188a130a31f4dfcb67e49abb1a48dbee21a493c3d06a56",
+      "bytes": 1374,
+      "gitBlob": "5eb6155c45b76a77d3c54e09977e7d49ad992649"
+    },
+    {
+      "path": "scripts/install-helix-fabric-room-config.mjs",
+      "sha256": "8552ed8a0678e0f5786b6ea1fcdea137ac50f1594e54ac90fd16e203482c81d5",
+      "bytes": 3440,
+      "gitBlob": "87180f056b5a5af0272af03319393e387b149b5d"
+    },
+    {
+      "path": "scripts/intent-probe.ts",
+      "sha256": "739028e0a532d7b74a2c19a0ae5a4d8b012ef29baddcab8c4f549c1fe9a89f31",
+      "bytes": 921,
+      "gitBlob": "5f20fd8668eff68d41188926ec00cedc3138694a"
+    },
+    {
+      "path": "scripts/lib/casimirbot-mcp-provider-conformance.ts",
+      "sha256": "f188377ac31bd8ec888cbcba7dd0e9b4f324f5d7a5220e585073d2be4ffd61b4",
+      "bytes": 56030,
+      "gitBlob": "05df4b24417073480e21abca138152e1b152c1cd"
+    },
+    {
+      "path": "scripts/lib/helix-ask-equation-benchmark-matrix.ts",
+      "sha256": "28dde58f0c3a0499986a7ec934417650967357836b00b643e3efed59e052b6b2",
+      "bytes": 2568,
+      "gitBlob": "aea471cf5d8b29d1e24d2e7f7ab4449acb371df1"
+    },
+    {
+      "path": "scripts/lib/helix-ask-equation-benchmark.ts",
+      "sha256": "54b85ae48ee7033a9833e745c74fec2371c8a7a2b1dc2b457f2c1c2d56f3ac4f",
+      "bytes": 11333,
+      "gitBlob": "3434d8b37b573f9e201e5de6bef48be3cc9e689d"
+    },
+    {
+      "path": "scripts/lib/helix-ask-gpt-live-proof-evidence.ts",
+      "sha256": "73ce558eea597caeb1d57fd41d88123ec1aed9431063c6048f01e5bd7c9d657b",
+      "bytes": 2102,
+      "gitBlob": "26649441d1daba5e892157ba2c277d4704e5b8fb"
+    },
+    {
+      "path": "scripts/lib/helix-audit-evidence.ts",
+      "sha256": "563b9cd47753ef1eb30e53d7effd85cc882a884a883c948dbfbf44a5ab771a8e",
+      "bytes": 6228,
+      "gitBlob": "a58b68ee7f6ee289f9debf541ff8a47e60e31c12"
+    },
+    {
+      "path": "scripts/lib/helix-decision-bundle.ts",
+      "sha256": "f86a70dfb17b15e8964cd4fa916bb18aa3299687382e081ce27a6f7311988222",
+      "bytes": 634,
+      "gitBlob": "dd6dce99baafe412861fb03c97d588d7b2b0a3f7"
+    },
+    {
+      "path": "scripts/lib/helix-friends-voice-party-f5-acceptance.ts",
+      "sha256": "c9596811e7d535106041ca43050be4f10283b96b34c748e1399be2d776025267",
+      "bytes": 11947,
+      "gitBlob": "15d5b5093d2260e4386ed7146d2b06f3ccc3c1a3"
+    },
+    {
+      "path": "scripts/lib/helix-mcp-evidence-capability-inventory.ts",
+      "sha256": "79b9c89220f12e3372eedd36ff85fb84b9732f8eb759c879498d799976875ac7",
+      "bytes": 12335,
+      "gitBlob": "5688eca24412842fd8e71b9aa39b8760234ec05c"
+    },
+    {
+      "path": "scripts/lib/helix-mcp-evidence-conformance.ts",
+      "sha256": "407ef139365a5d1309e93fbf63f00c2ec0dea09d00301fb209f50ab2f63557e8",
+      "bytes": 4671,
+      "gitBlob": "3507cccf7d4208e1b738fbf19896f9ac9c94b2da"
+    },
+    {
+      "path": "scripts/lib/helix-mcp-evidence-public-ui-crosswalk.ts",
+      "sha256": "c1eb620f1de6970f7dc345ac72c21fa9a02d3776f1a987fb9779598abca5306f",
+      "bytes": 4054,
+      "gitBlob": "4087e0388a63e6efc81de5ad4db2779b3179e82d"
+    },
+    {
+      "path": "scripts/lib/helix-public-ui-control-inventory.ts",
+      "sha256": "890c05b3d937e2b5ba68a7c4d4b6dcf93e8fc7f3d499c371f9601b20913cdb11",
+      "bytes": 17702,
+      "gitBlob": "9dbb2730a2adb5e7a4d7e6aa9628e16c1e1c996a"
+    },
+    {
+      "path": "scripts/lib/helix-shared-live-room-live-acceptance.ts",
+      "sha256": "6572dda3bf309dfc9dafe84c7942df5a8a8685e5d1fd5aabfe29b98c8f6280fd",
+      "bytes": 81584,
+      "gitBlob": "deb8d3ffcaa798b7111358e34fc058eb5163b697"
+    },
+    {
+      "path": "scripts/lib/research-citation-gate.ts",
+      "sha256": "23de0687669bfb932937065f8f53bc3e1647c952da40580da803c9f15eb586d9",
+      "bytes": 17526,
+      "gitBlob": "25e34a52b6b6e76b159c48758c663c20a98b7764"
+    },
+    {
+      "path": "scripts/link-theory.mjs",
+      "sha256": "b35b2b2e93a3548b9577bc959232a989fe4fc84c0d61f2bf5e9a4285237303b3",
+      "bytes": 3288,
+      "gitBlob": "186fa3f1c6a566960796e7c39439de51bf76cd1f"
+    },
+    {
+      "path": "scripts/llm-local-smoke.ts",
+      "sha256": "3da8847d3ab633c2bc413876dd7e4402473298dd4a34714c4c6454eea9fb7ea2",
+      "bytes": 1693,
+      "gitBlob": "eaa8f4e1a5c03ea4065eb3f96d5247e45b872fdb"
+    },
+    {
+      "path": "scripts/local-hosted-budget-handoff.mjs",
+      "sha256": "1e7e87c932147c69391a06b32648b35a2730c995ffea5ec7eb8a7e64bf7e4f3e",
+      "bytes": 3484,
+      "gitBlob": "d4558275e3c4dc2964da4f78c737bab7727c6059"
+    },
+    {
+      "path": "scripts/local-platform-acceptance-harness.ts",
+      "sha256": "977fb8fda611a6ce0ef037759b70399d5346fecbf0a6af8ce90be3be8d3b96ca",
+      "bytes": 9743,
+      "gitBlob": "8731be0f8b6a2bccee4f3ba7f561ad186c55c04a"
+    },
+    {
+      "path": "scripts/math-config.ts",
+      "sha256": "81cb9ad2d42e60a0f5ecd317f0bdb2ec10d43e2e61c1bf37731cd828bf5bee0f",
+      "bytes": 3149,
+      "gitBlob": "50296797ed358d5fb1f570257bd5575446abf1ce"
+    },
+    {
+      "path": "scripts/math-congruence-citation-check.ts",
+      "sha256": "f5d2ce8a47c153ff5c8ba305de20b1d1a0a7e280d465abab94503c02e481159e",
+      "bytes": 27404,
+      "gitBlob": "8664caccb644f781f25b12338e8ed5bda5ea22cb"
+    },
+    {
+      "path": "scripts/math-discovery.ts",
+      "sha256": "69d14cd145ff65cdb0f899736a0be703ef8aa9036e7d00d2ee3736db83a7338e",
+      "bytes": 7956,
+      "gitBlob": "57fa92e5d9f8570db7fd8c31c73c557775e4b2e2"
+    },
+    {
+      "path": "scripts/math-evidence.ts",
+      "sha256": "be44050c78711276c287d4fdbf59a9151f485b4f0f0897d7690d9ac8a6b3986f",
+      "bytes": 3601,
+      "gitBlob": "33212fc9ebfdbc111b4c3d59f7070d87726713ce"
+    },
+    {
+      "path": "scripts/math-report.ts",
+      "sha256": "48177225a4122c71b339e9d7843f16e00586313c56ae795e691f443f9326bd6b",
+      "bytes": 28727,
+      "gitBlob": "33fb1dac04f36de9367fd49107097fe83a902811"
+    },
+    {
+      "path": "scripts/math-trace.ts",
+      "sha256": "9bca6abb3b7ae5fcdf0af632bb43ec5ce9a6081a08d965151406414ad5ee14b2",
+      "bytes": 3816,
+      "gitBlob": "c66bd04e0c94910b2889faa22578a717b7c80e1f"
+    },
+    {
+      "path": "scripts/math-waivers.ts",
+      "sha256": "87858a0c8efd231709b3be0d153f47b57c4c2077d2846849e99774bb8ed0be11",
+      "bytes": 1660,
+      "gitBlob": "e502c886838ba610d2336ae7c86d2a22203e1d74"
+    },
+    {
+      "path": "scripts/merge_lora.py",
+      "sha256": "4ffb948f1dca914d5ff7b6f70b4ce747c298744c9dba78e75e1c2f2153605298",
+      "bytes": 3426,
+      "gitBlob": "68cddd0c280315edcdfe4ceccefb360090cace61"
+    },
+    {
+      "path": "scripts/migrate-noisegen-assets-to-storage.ts",
+      "sha256": "9c4f3944fa110a1e6d2a67d967ed2c06cf55931360018bdf4c29aa00b44038ff",
+      "bytes": 5779,
+      "gitBlob": "43b69a2f4954d30f9843920e27c5e680fa89d3a8"
+    },
+    {
+      "path": "scripts/migrate-store-to-replit-paths.ts",
+      "sha256": "b08edb53576eaf4020eb605cdb8513a61d7246c003bbc5af71aa24fc25042403",
+      "bytes": 2233,
+      "gitBlob": "94085f98e59098acb3fe002f570666169b2c8dc7"
+    },
+    {
+      "path": "scripts/minecraft-paper-sensor-loopback.mjs",
+      "sha256": "c0798601028c56b1a33ab9de2df8324fc933e5909fb838435b2fdee8127f103e",
+      "bytes": 7924,
+      "gitBlob": "ea4455fa87a6feb6fa02e54b516dfae031eeb9a2"
+    },
+    {
+      "path": "scripts/minecraft-paper-sensor-mock-helix.mjs",
+      "sha256": "92023a2474a845d6fabe0a2683269b555baec1d0cdc2278c90b61b3b0921feb3",
+      "bytes": 6450,
+      "gitBlob": "453abea247cbcfee27bfdd3a74331cada07d9eb7"
+    },
+    {
+      "path": "scripts/minecraft-paper-sensor-runtime-check.mjs",
+      "sha256": "778996a8ad4e2cf60bc9aabebe9e61e037c8d295d8cbcb964298e88c7fc32af3",
+      "bytes": 2134,
+      "gitBlob": "c3ad1e40d2652a2bea590d034967a98ce6a67fc3"
+    },
+    {
+      "path": "scripts/moral-graph-coverage-audit.ts",
+      "sha256": "367f486bba7986b5df645d2afd8b1ed6e9f370a1d7431d9ded6004587a527c4d",
+      "bytes": 2008,
+      "gitBlob": "11f6b62c7952daffb4d3b074ecbc80ca8d005350"
+    },
+    {
+      "path": "scripts/moral-graph-mcp-harness.ts",
+      "sha256": "f225c71f263efec7c66a4f7852f01e25eb188223a724d37ecb3985132dd84abb",
+      "bytes": 2362,
+      "gitBlob": "6ebe41ca5798f43d745514bad9f16f8a79a2c7b4"
+    },
+    {
+      "path": "scripts/nav-eq-acceptance-readiness.ts",
+      "sha256": "8e4165c7cc785f1e0079a5182b6dd541c8d241e218d719f4f98fc089a439cd84",
+      "bytes": 6769,
+      "gitBlob": "a1e97b29ef7b04dd6523ba4c5e02ddd1322601d8"
+    },
+    {
+      "path": "scripts/nav-eq-build-live-root.ts",
+      "sha256": "75bd783cfed09ed319722493fa23aca0fab1c1a3a207a60610702366271d550d",
+      "bytes": 2190,
+      "gitBlob": "ce16db90f9927b6076855e0d933eb7279185997b"
+    },
+    {
+      "path": "scripts/nav-eq-build-plan.ts",
+      "sha256": "393673d919bb7b661ebb5bbd9d867f93073688d69bce0d639b6f962b2459bc52",
+      "bytes": 1205,
+      "gitBlob": "3b30723525e07214ad0d47478225c010e2528676"
+    },
+    {
+      "path": "scripts/nav-eq-build-south-child.ts",
+      "sha256": "8cd60016281b1117c92c7739f461d5dd236e478be2a326a7e1fa50331f00eeba",
+      "bytes": 6511,
+      "gitBlob": "a2fa71039ef2632ac3b9ff4d150a2ef3b233210a"
+    },
+    {
+      "path": "scripts/nav-eq-build-south-root.ts",
+      "sha256": "d49fb35df4e67521fb609db7884c3e66508dee1bf6ef3601d6eb01dd153cf6e2",
+      "bytes": 6408,
+      "gitBlob": "1c7ce72c009bcdadd3a75c5a9491667a9adf9483"
+    },
+    {
+      "path": "scripts/nav-eq-hash-plan.cjs",
+      "sha256": "0dcc9cc5586a97623d4c4a7a69fb113422628e2090b4d1b4841596fed44080d7",
+      "bytes": 736,
+      "gitBlob": "2c4f1c6e2ab87e233e87c093f1250d5cd5aaba10"
+    },
+    {
+      "path": "scripts/nav-eq-inspect-authority-state.ts",
+      "sha256": "b5e2ea9683e50e10921fc421c0073b79363c80eb7e644e104af374283c7c07fd",
+      "bytes": 3274,
+      "gitBlob": "558bc41e65733a9ecd148d06f509e7bf63c495fd"
+    },
+    {
+      "path": "scripts/nav-eq-inspect-successor-window.ts",
+      "sha256": "490d88c95f9b85734c6914c1b0b521915a434c32ad5bda2fc8dd572acb6da531",
+      "bytes": 6760,
+      "gitBlob": "5cee1da4b90fc46b6636b1de217ed83ac5d099c6"
+    },
+    {
+      "path": "scripts/nav-eq-measurement-readiness.ts",
+      "sha256": "e28e7333451d387787c179810c12fac5f9d666fb4a66bf1cb5caa846a0cc737e",
+      "bytes": 6412,
+      "gitBlob": "a6187722c3df2404af4fd261b6e615ea5cb7e9d7"
+    },
+    {
+      "path": "scripts/nav-eq-protocol-readiness.ts",
+      "sha256": "512acc897eb45ca01bfe3b27bc52c8cdab2c5c96b57f2021b3eeca1a576099b7",
+      "bytes": 7476,
+      "gitBlob": "e345609c6001fb9adb442f78e08f33896f55cba7"
+    },
+    {
+      "path": "scripts/nav-eq-replay-checkpoint-diagnostic.ts",
+      "sha256": "8727a25bca705d8644a00bf07baf23a10a7f5637b26880bb67cd70452318a3c1",
+      "bytes": 3911,
+      "gitBlob": "2bd726576e3bb23c6630ef54bf36bf81c92dca2d"
+    },
+    {
+      "path": "scripts/nav-eq-runtime-integrity.ts",
+      "sha256": "88a3d2d4255e28f66cf02d30373e87b42d979e523ab6abb5f3d432ebd3c08078",
+      "bytes": 5593,
+      "gitBlob": "b098c5ff878514c471f398ea388ecace91018c63"
+    },
+    {
+      "path": "scripts/noisegen/extract-4bar.ts",
+      "sha256": "7b6d1e8cff050074e184b409c89882f169cce3ee4983628a025161471299d808",
+      "bytes": 13405,
+      "gitBlob": "7b66b11a35538cca3fc858ea47ccbcfd446171c1"
+    },
+    {
+      "path": "scripts/panel-cross-concepts.ts",
+      "sha256": "546e305ac714b7f7fdd9d13ffb287461e5a443d93cc89c06ef992760d498f053",
+      "bytes": 15968,
+      "gitBlob": "4faf28fc5f0bb5fa6b5549d0ae09416db7db425e"
+    },
+    {
+      "path": "scripts/paper-framework-binding.ts",
+      "sha256": "75d6662dfae2bf3f87e3d643df15dc280e3ff51f8c1bb5eea00bd4a3ddfea080",
+      "bytes": 60079,
+      "gitBlob": "9dad653418ad1014088cbb184f17187be27bd84d"
+    },
+    {
+      "path": "scripts/paper-gpt-pro-packet.ts",
+      "sha256": "a98c437be1f8128c89a5da03c85303c53ff87ef5e60d50d84d3d6586c1b5136d",
+      "bytes": 53214,
+      "gitBlob": "4484a2f634a632289fa0a614364e3b8da0a52324"
+    },
+    {
+      "path": "scripts/paper-gpt-pro-validate.ts",
+      "sha256": "a944a621c54b1882f3d2dbf71d662ca17cb2d9c58fcf5c7bd0613626f2541139",
+      "bytes": 27400,
+      "gitBlob": "e0af8a5c838f7eba31081b1191c1c97d38225e49"
+    },
+    {
+      "path": "scripts/paper-prompt-ingest.ts",
+      "sha256": "d4cc3c9d06f5fd9f62d5a9ded7995b3fff2ef469cb35e012765d41580adba710",
+      "bytes": 125740,
+      "gitBlob": "088e3a718e9333fdef1ecefbb158d433b76bd0b3"
+    },
+    {
+      "path": "scripts/performance/measure-local-runtime-memory.ps1",
+      "sha256": "1fb3e4f50d45ec068588ab90f2ee4b413c192ad25837938b01be5de8a96c3e9e",
+      "bytes": 11586,
+      "gitBlob": "33e0c7072710e2f109a2deeac387b4791a56074b"
+    },
+    {
+      "path": "scripts/plan-exec-with-debate.mjs",
+      "sha256": "39c087f0cf70f1689296a9cbd76a26849a288cc610bdf59981e26b9bcb8bb248",
+      "bytes": 2174,
+      "gitBlob": "e1aceb0b8ba12467dc90c41b9554e05b08661f8f"
+    },
+    {
+      "path": "scripts/plan-train/build_renderplan_dataset.py",
+      "sha256": "67bf3af416accf4c1b3244b7b374d2d329ae567b11a7e4f4dd501b8802419643",
+      "bytes": 12027,
+      "gitBlob": "9acd0c53797a359c0fa8152240b1862bff035adb"
+    },
+    {
+      "path": "scripts/plan-train/predict_renderplan_model.py",
+      "sha256": "af07799248021d7fe6a8628fe1625ee1f0752e4de31ae38d338937d55053b6b8",
+      "bytes": 5932,
+      "gitBlob": "f9f5aa98532714d7fd5cdafea74e6d91a001ac30"
+    },
+    {
+      "path": "scripts/plan-train/train_renderplan_model.py",
+      "sha256": "fbf19a43acf5af0e029999221b1cd33c4f60e2e9d1b4ffc95824d240bc30138f",
+      "bytes": 6760,
+      "gitBlob": "505277b2321fca5297efc5de35e1fdd1c62c7f21"
+    },
+    {
+      "path": "scripts/precompute-lattice.ts",
+      "sha256": "70194abe66d9315d7b171efefaf0c06a6fc36f85df3d76f80b36a70e6de708c3",
+      "bytes": 24306,
+      "gitBlob": "50a653af18e100697a64c880faf8314151ce37a4"
+    },
+    {
+      "path": "scripts/provision-private-managed-ai-developer.ts",
+      "sha256": "d03bc08d48c4e443fa71c1199831c07e46a4c63e9308029dd177e41b1e5baf66",
+      "bytes": 1182,
+      "gitBlob": "653345003ce5aa9f3cecd6da4d9a543e64128642"
+    },
+    {
+      "path": "scripts/prune-code-lattice-missing-files.ts",
+      "sha256": "be9b3a9aeb02b793a18cae4fcef19f29f8d61d69d434c929449e852c9eec6127",
+      "bytes": 7897,
+      "gitBlob": "c5f537aa851aeb31e6d9bceee083e14c5511464f"
+    },
+    {
+      "path": "scripts/public-context-disclosure-snapshot.ts",
+      "sha256": "826222205214fcda7141efeb653a9c17ce7f7dac3f28ae2b4765ac4ceb4984b3",
+      "bytes": 4534,
+      "gitBlob": "01276d38b34734829f65485ae4998a61d3f2a465"
+    },
+    {
+      "path": "scripts/public-context-reflection-matrix.ts",
+      "sha256": "a845d3269a1381c63572ea887d8c19d43337e4e7b00583ce8631db61c2353c00",
+      "bytes": 60167,
+      "gitBlob": "13c2e08d6972756844e07da73779894d97f6303b"
+    },
+    {
+      "path": "scripts/py/math_check.py",
+      "sha256": "9c96639f5b40d1fc282d4cdee0488ad915d7de3452ee33a64a5d93743742094a",
+      "bytes": 1380,
+      "gitBlob": "00f30f1ef594fcdcc281f8c06bf93a7ccfa7a757"
+    },
+    {
+      "path": "scripts/py/math_router_symbolic.py",
+      "sha256": "a413a32e7e190094cfb9365508c5a702c96ef0a2be28619ecb4b678cac3c19e3",
+      "bytes": 2041,
+      "gitBlob": "0e7b76c8887ffd240bf47602d0b675fae006a3f7"
+    },
+    {
+      "path": "scripts/py/math_solve.py",
+      "sha256": "25e6fcee80dbcd2c92779dbb61626e3745669555fbd33903a581c803127f613d",
+      "bytes": 5085,
+      "gitBlob": "473928cfacc6d21825017a66adb30dd7a50e7a71"
+    },
+    {
+      "path": "scripts/register-discord-helix-commands.ts",
+      "sha256": "2d57c0b2be9ea07a7ba3d496f13cfefafd698af13d62b59dc3c8de15970c9650",
+      "bytes": 917,
+      "gitBlob": "d14a19014c2ae5135389f000cc42309de07d4c0f"
+    },
+    {
+      "path": "scripts/rejection_tune.py",
+      "sha256": "732ef36b055897b356f8fd312085dbcfe8deddd4cac8ae83ba7a721b26692911",
+      "bytes": 2784,
+      "gitBlob": "5e5fefcaea6c05a3c79d1cb27dde0017af2f278b"
+    },
+    {
+      "path": "scripts/render-natario-shell-overlay.ts",
+      "sha256": "942bdfec43e1f2079185efbf1ab2f04614c15c2d1fd97f80ca3d5cb72c1ae2a1",
+      "bytes": 16970,
+      "gitBlob": "ac49e3eea26225c6c28fb86378b22b118f817ce3"
+    },
+    {
+      "path": "scripts/render-rodal-3d-turntable.ts",
+      "sha256": "c7c5fbf88cb62473541e8e4f2c204476fac11ae217d95834f0c082849567c7a3",
+      "bytes": 10744,
+      "gitBlob": "1fc7dd1bab17f2363623ee8ad322657470a66225"
+    },
+    {
+      "path": "scripts/render-scientific-toolchain-doctor.ts",
+      "sha256": "d7d3ff94e1218fe40e0e2ab0f23d0019ef974cc988daa89f580ebc0ff92e15a7",
+      "bytes": 7406,
+      "gitBlob": "d1444b2b5133c4243cf54ceaa812df7d702f275c"
+    },
+    {
+      "path": "scripts/render-spacetime-grid-overlay.ts",
+      "sha256": "a3583faaf1010ab94c99ea9fdd614ccfd7bd842c30d592316fa6f251ef6afc17",
+      "bytes": 21286,
+      "gitBlob": "798793ddf8fa7f81accaef428652aacbfa9de149"
+    },
+    {
+      "path": "scripts/replit-build-lockfile-preflight.mjs",
+      "sha256": "39837ea941905703ce7284d0feb6409a19c93d255ae38e5602baf2f752e45c3e",
+      "bytes": 2576,
+      "gitBlob": "e632b3dd201c3cd4c783a98500830936f1cfe21c"
+    },
+    {
+      "path": "scripts/replit-build-lockfile-preflight.test.mjs",
+      "sha256": "fb994afc15be34babc80b0a010039165db8d113aeac3a8f048ae3ec2e0d5a01a",
+      "bytes": 3239,
+      "gitBlob": "d7cb1f0e911a662bd039b8ef870ea0c059afee91"
+    },
+    {
+      "path": "scripts/replit-build-meta-authority.test.mjs",
+      "sha256": "96141c1b41716d2e36a0bf2bee48a541c90c88d8bf71ada94d401916c997e708",
+      "bytes": 2562,
+      "gitBlob": "19b0c8ad847bc3c6cf4c5bf19a58cbe49ce63df2"
+    },
+    {
+      "path": "scripts/replit-build-meta.mjs",
+      "sha256": "35245803b91ec15a16c0e333049df071b56e4aa1b6353855c0eb6489b8dfd9f4",
+      "bytes": 20671,
+      "gitBlob": "2f8da7776c153e29f645267aab36915fde237ec6"
+    },
+    {
+      "path": "scripts/replit-build-reuse.mjs",
+      "sha256": "2defb61ce2c3a41629f55ac8da0bebba5faf1173820d7c9c8f9b94e10be445c0",
+      "bytes": 544,
+      "gitBlob": "ecd84e9629ad857ef0c52af536401c46d9fc010f"
+    },
+    {
+      "path": "scripts/replit-deployment-compact.cjs",
+      "sha256": "5802649f78cf980915ea57a8342e66cefe3f1458b2d880c1cb1b81f7e35d0b11",
+      "bytes": 1349,
+      "gitBlob": "d76f4b7dd3c24a946f581f843199bfa2cbdebaff"
+    },
+    {
+      "path": "scripts/replit-deployment-parity.ts",
+      "sha256": "605f88c862b986e3eb394edb9c5686b59aa2b4463267ab8a2f400a7ee8775256",
+      "bytes": 11942,
+      "gitBlob": "089a6591447584c0b7e2f7c755e63f77856e1302"
+    },
+    {
+      "path": "scripts/replit-production-smoke.mjs",
+      "sha256": "23f8301db676611638f46c0a73a6b933cb954dca0bc6bf27b9771267a2d756ec",
+      "bytes": 20810,
+      "gitBlob": "1fde9dc0e3570b333a0cae038212b88b0cac9ff6"
+    },
+    {
+      "path": "scripts/repo-atlas-build.ts",
+      "sha256": "55373f4b7f10b4cc1856254b231de0ac553edd8bbbe56d47032ac56c1ce4d7f2",
+      "bytes": 28772,
+      "gitBlob": "28bbf8319a2a6aa3160d9e9e5fb3d90f84c88e04"
+    },
+    {
+      "path": "scripts/repo-atlas-query.ts",
+      "sha256": "eeaf3f7573f7d96bb870ad3ad00e34676ddc96f409f2af87f4147ebd0f25fdce",
+      "bytes": 20591,
+      "gitBlob": "8c7963001af4a2fa9fd40e292327fee577ae5dfb"
+    },
+    {
+      "path": "scripts/report-interface-i18n-coverage.ts",
+      "sha256": "3f70d11948b824ca0a18a9a669569b2c8dd133d931a2a25e71e64c1ec4785562",
+      "bytes": 4877,
+      "gitBlob": "a70d61382196e9debd0f9c320ad80adec78338a3"
+    },
+    {
+      "path": "scripts/research-citation-gate.ts",
+      "sha256": "a1122e2970374e31d1407e1775817e4b339fa77ea84e3b57a3c614185f537e75",
+      "bytes": 1525,
+      "gitBlob": "217aa8e1337d9a65d4dc61864c51a9722ed69412"
+    },
+    {
+      "path": "scripts/research-mcp-capability-audit.ts",
+      "sha256": "8fcc0ab6979f853a630688a70dcf254401d38f6c25f50aa09d4d20c8c35ac1e6",
+      "bytes": 7572,
+      "gitBlob": "5a7b891025ee97a415fb115c499d85ad848baf81"
+    },
+    {
+      "path": "scripts/research-mcp-client-grant.mjs",
+      "sha256": "5875f95615936391eb944139aab58fcc3970b141f8dae4e4d05c8351863d82d3",
+      "bytes": 1663,
+      "gitBlob": "dc1e31e657d071cb0b251fe2289e06e19a9beddf"
+    },
+    {
+      "path": "scripts/research/build-casimir-advection-diffusion-fixture.ts",
+      "sha256": "d52837470e62f86b599ec82e742388799911df0f9bc86e6083674fb04a5948ee",
+      "bytes": 10316,
+      "gitBlob": "b5f9c497253518162dafa2681a23fd204e7e6c39"
+    },
+    {
+      "path": "scripts/research/build-lanyon-gr-maxwell-formal-audit.ts",
+      "sha256": "e9cdecc6e20e6521c1b0735c6f808443a21b7bad00b269d8d71a6e40ef7522db",
+      "bytes": 15459,
+      "gitBlob": "f4ca82c8bec8c3fd3f8f0b39a22b3cd2d5c66ea1"
+    },
+    {
+      "path": "scripts/research/cherenkov_high_signal_screen.py",
+      "sha256": "22cb3cb7c008bd91e790e71b51d4cc7a1593ae69c9b7219d75a45726ad373d18",
+      "bytes": 3045,
+      "gitBlob": "e2845ab9bf6a363c11b7885baba8d32b9b85e259"
+    },
+    {
+      "path": "scripts/research/cherenkov_spin_stokes_reproduction.py",
+      "sha256": "36cecec93ebf8a25e8d009f1864ff7eb6ee9e2539470d55e18fd0ab4f64e0f91",
+      "bytes": 8701,
+      "gitBlob": "0b4dfce644ad08f6182b443cdb41e7998a3afe42"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/audit_saved.py",
+      "sha256": "57d836f7efe7bc7522ae515faefea331901c97a0b73cc0903021b4c912a67929",
+      "bytes": 6982,
+      "gitBlob": "b8acf084bfc5567a66fd5a3ad2574b543f6c3055"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/checker.py",
+      "sha256": "39ee0ff74bcbcdc56b46c5f514160ec86e934ae43ecdac0093cdc4ce76a627a4",
+      "bytes": 7434,
+      "gitBlob": "07212129ea702e1fa5445f98b082f507348e89fb"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/plot_saved.py",
+      "sha256": "f0006475cd10fbb353334ddbe95eb9ac28b52b4b767c8e0f24094fb786096511",
+      "bytes": 2055,
+      "gitBlob": "dd2a403468d88c2c233eb258f3a65376d647a605"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/solver.py",
+      "sha256": "e0de8cb4ac45e8103e76a47b51636cda77dcab2de9d9589b1166a191fd8b139e",
+      "bytes": 8374,
+      "gitBlob": "bb8e594b800a432bcf824bb157443fae2c4d28d8"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/study.py",
+      "sha256": "20a7821b6e0893e96c57f4bdb4c5e91ab7a191e34fe59f380ba202c7fcb0e1ef",
+      "bytes": 9565,
+      "gitBlob": "f649f29e401f52d81359227cc2c92b08933257d0"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/test_definition.py",
+      "sha256": "26859b8d8fd2016d9cb0bcee5265c10ad5e1c1225181268f96f9a75beecccde5",
+      "bytes": 8325,
+      "gitBlob": "e4887df07a0a6766a921e1ca843d11027ee45808"
+    },
+    {
+      "path": "scripts/research/classical_boson_reference/test_study.py",
+      "sha256": "ff8bcd53a67316f8f56315074020130d0e28e820cca268798895433f3789c1c3",
+      "bytes": 2307,
+      "gitBlob": "202982675171c5da79a06ff53bd9926e0df76f74"
+    },
+    {
+      "path": "scripts/research/export-casimir-dp-stage4-verification-trace.ts",
+      "sha256": "2711992b5eede5b438724817a994e3d7b55fe724d3620bf6b3dbdbefeb368178",
+      "bytes": 12633,
+      "gitBlob": "b22f8f2676aeb0c8485b0b38f78c7e476d0960f2"
+    },
+    {
+      "path": "scripts/research/ferrofluid-core-screen.mjs",
+      "sha256": "5a3438c43fc9137f2ed95c29214156b01033402939f1cdec4c383328334740e1",
+      "bytes": 4906,
+      "gitBlob": "ea9146ad6786c1cfae3d01d4b4d7432117bbb75a"
+    },
+    {
+      "path": "scripts/research/import-casimir-dp-public-data-stage4-2o.py",
+      "sha256": "ac107abf2f180b88f9c224aaf55de709d3aba8fa5f6ff70abda95dc107cfc297",
+      "bytes": 17827,
+      "gitBlob": "bb3f7b7c7e0f347bf0ab28f1adff7662fca29fb4"
+    },
+    {
+      "path": "scripts/research/p8q_local_lifecycle/fixture.py",
+      "sha256": "962a2642196f83b0f311964520cb9e07bb2e33bf6e72e373c0646d7581562068",
+      "bytes": 15698,
+      "gitBlob": "a8472997a7b06c0b761ec631c94dfca6423c0a5d"
+    },
+    {
+      "path": "scripts/research/p8q_local_lifecycle/replay.py",
+      "sha256": "42da68c7758a388355d21b57d342cb64d68307bbe3fc4ce14cb9b308064e0ec4",
+      "bytes": 11433,
+      "gitBlob": "a74414851f549b66f202100dc66f8fe27cb9aceb"
+    },
+    {
+      "path": "scripts/research/p8q_local_lifecycle/seams.py",
+      "sha256": "d25c873f54831f647dd0e0a1add01e25eaddaa194fabb14fc700bb88f4dfa4f5",
+      "bytes": 1515,
+      "gitBlob": "fd8a2180115854281e8988713479ff313bbc6af5"
+    },
+    {
+      "path": "scripts/research/p8q_local_lifecycle/test_lifecycle.py",
+      "sha256": "5441f66b50bd34645fce45a07f6f0d6ff62ea69847bf7c96d9ad0213a89418c6",
+      "bytes": 13161,
+      "gitBlob": "f2066a986cf257c634bff472a8687e3a8a1a25d7"
+    },
+    {
+      "path": "scripts/research/prepare-star-watcher-event-package.ts",
+      "sha256": "263c069812ee19a24eb64def0c2abfccacaf25b90ef3deb7b25826475e1f214d",
+      "bytes": 2672,
+      "gitBlob": "9bf2b4d7d59bd72597dff83a09bb2e15dfc702ac"
+    },
+    {
+      "path": "scripts/research/probe-star-watcher-magnetic-directory.ts",
+      "sha256": "1429d0ac90885abf2ae06ed40039d2e8a310b198dfcdbfc3fec156e0380cffba",
+      "bytes": 3142,
+      "gitBlob": "6676dbf25f339f15146d14542070feaf4d17e621"
+    },
+    {
+      "path": "scripts/research/run-casimir-advection-diffusion-numerical-certificate.ts",
+      "sha256": "25297ce1b72be06f0d46d795fc85b27b0e43a7ed11fda72c5bea8b6e9d2a38bc",
+      "bytes": 20691,
+      "gitBlob": "8a4849a1bee1c1c4105b2d45ea19f48944746d8f"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-apparatus-coherence-residual-stage4-2b.ts",
+      "sha256": "59c8ba29ad83d60da821f4511af085df1f8d0325dbcb94adfad41cf13fdccc89",
+      "bytes": 200372,
+      "gitBlob": "694bee5c15ee575e99452c645fd2f871a972709d"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-apparatus-search-stage4-2m.ts",
+      "sha256": "fe562e353b64aedc9616403a1e4d88c5fe0a8fbe62d5384af7908a69525c408c",
+      "bytes": 8077,
+      "gitBlob": "610f1e92103267ff397403478af579ce0e4b7bfc"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-boundary-branch-interaction-stage4-2i.ts",
+      "sha256": "e994de11eb87132fe7d049d854816938720034587b10d8308c205e5c93870f3a",
+      "bytes": 21315,
+      "gitBlob": "e0c332e26ea2664d5dbd548d3f26455cd24f5536"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-causal-cone-clock-stage4-2e.ts",
+      "sha256": "4d41ed09329e7a8229d680c629f1ccd2a776c1cc8d2b530a8f58084d5a9c67b8",
+      "bytes": 23793,
+      "gitBlob": "afd7f7c7168a7e7dde7315436acdddd020d50fd8"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-commissioning-intake-stage4-2h.ts",
+      "sha256": "7f3345fda995c792f305bbb4e35879e6bb1db21a9289e4243cabc495e4c33192",
+      "bytes": 22110,
+      "gitBlob": "6f31701b88dd0791ea715e7a6378858892a4da61"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-cross-scale-metrology-stage4-2d.ts",
+      "sha256": "435541ecf0d0eb40046e7a92b5014aea7ffeabce175a67cae17c7e1240d80c42",
+      "bytes": 21216,
+      "gitBlob": "3dc4764964ed03701ebf757f8605f0c830ff0ee6"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-data-readiness.ts",
+      "sha256": "eb92afb2f952175316e3b6db0b9e6a3504ec13d3a73feb74905148719921c3c1",
+      "bytes": 13542,
+      "gitBlob": "ecf51e2f7f55ff54dead2f2d82d42f8bfbf56885"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-electron-mass-higgs-anchor-stage4-2a.ts",
+      "sha256": "a174ffa055a0e34d387d4e1ea593f7ef401ef4edabd3f48bdc9a5aba4268d5d8",
+      "bytes": 49732,
+      "gitBlob": "05c52dcc39130aa97ef8ee897cda2b9ecac742db"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-empirical-authority-stage4-2l.ts",
+      "sha256": "2c47b73323ebf388d89868fe4e7308bd83638c5a8221d8636190fb393a740860",
+      "bytes": 13603,
+      "gitBlob": "fd192ab4f334365e5f27992e13a01d7634c580a2"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-empirical-feasibility-pilot-stage4-2g.ts",
+      "sha256": "30ad69a3dc5de12dcb2aee3b19604e84f6fab6ffe80ed855b9b6baaf7e43c6f8",
+      "bytes": 23161,
+      "gitBlob": "6e88207061b5894b6aa65e9c8aa53a6c3258f5b5"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-evidence-map-stage3.ts",
+      "sha256": "3a09d4e840439ed36bf1ba69e78dc5494ea8115282e0358427f4253c70a3fcde",
+      "bytes": 16451,
+      "gitBlob": "6ec3025572a7beb5c0dc7bcb6d3a3bd87340916a"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-experiment-design.ts",
+      "sha256": "097ecd525143cf4a2607ab8bb07cdecbfa81284a4ade1a172353e5db34d063f3",
+      "bytes": 17851,
+      "gitBlob": "103b4130fec667be1ed5cbf3283c41bbb6e0961e"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-identifiability-redesign-stage4-2c.ts",
+      "sha256": "4422a7a228ef12cd35165ea0d32b9dcd98485dfef0d80145f8c08a1b28901db4",
+      "bytes": 34516,
+      "gitBlob": "94944c444377aff940f4df5f1be35774054ef777"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-integrated-feasibility-pilot-stage4-2r.ts",
+      "sha256": "5889d9833f9ed7faecbea80d047145a0f2bf551bf0a1d0a2d3bcd25c694c6b76",
+      "bytes": 10004,
+      "gitBlob": "6c13dbfa870f54befafbbc7703415c4a5781d3a8"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-material-thermal-ordinary-null-stage4-2n.ts",
+      "sha256": "ab438a994d3cd34b77615126cef4894bb450ec45fd2f2b5395966862f8716d86",
+      "bytes": 9773,
+      "gitBlob": "378d50fb0158528d060492db72afba082851954e"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-maxwell-macroscopic-qed-closure-stage4-2f.ts",
+      "sha256": "049a4958a65f06b09f0946b6f861083a40a955276d5d135ae120c7fa5d694e3c",
+      "bytes": 30435,
+      "gitBlob": "601ee2285222114ba7e8ca8b8d3046af87fb4df9"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-microscopic-em-closure-stage4-2k.ts",
+      "sha256": "672553ed85f15a9f75cc47454c849ba1cfe6f961f0174eb225879745d5cafb5d",
+      "bytes": 11566,
+      "gitBlob": "da817c261d0fbf4dd8fdb061d6986d95be769f8c"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-next-computations.ts",
+      "sha256": "d0b716ea591f2045bdd7578681dffcf2439be0c287b3d9f2d5de11c182ed0fd9",
+      "bytes": 20810,
+      "gitBlob": "cf38e59f5e592251a9b6aa0852b289fa283242cd"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-or-phase-stage2.ts",
+      "sha256": "625949ccde8d584955e692ff3a3bb1320fb167ff0ae969b7df19af071df4db70",
+      "bytes": 16505,
+      "gitBlob": "386d716f4425f3c44f652af126102f8b7bf4cc9d"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-penrose-candidate-theory-stage0.ts",
+      "sha256": "0ec4a1ac7ac95a451489990541d42df6f3a5c9a92f794d4e16b75f269c1be526",
+      "bytes": 11877,
+      "gitBlob": "fc739c2dfdda37c0c27e9534e59697f35db57e1b"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-penrose-relational-correspondence-stage0-1.ts",
+      "sha256": "314602831545fbfe27b2a6310a1a95201688ed8894a60e53aec798575a28d370",
+      "bytes": 12833,
+      "gitBlob": "dca43d93c41dff4706a20aa8c71e58ffc462120a"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-polarization-congruence-stage4.ts",
+      "sha256": "1412eef8310a29149fbbaf89e38b3a9eba570e211060cda438be96d6d3e220ec",
+      "bytes": 20621,
+      "gitBlob": "c97d6afd7df1227de4173ffd3504395655b927de"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-proper-time-worldline-closure-stage4-2p.ts",
+      "sha256": "511ec160949586bcdc77eed2effc842eca03453b8558480b1ef650eff41dee0c",
+      "bytes": 7850,
+      "gitBlob": "14f9544151cd1f1ed9ec01ec8302bb21144f0608"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-proposal-closure.ts",
+      "sha256": "d1f1d7f39eb6e9fe0c23fafbe70a1601722c006ae3ac029a69ac479f1d191afa",
+      "bytes": 10562,
+      "gitBlob": "27135ea6f02b51affe401e82d63ae654e826ab25"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-public-data-component-validation-stage4-2o.ts",
+      "sha256": "0c3bbc1ef63b435278868ef6a4f7039a65a64957579a7ed5d3048afc416f6fbf",
+      "bytes": 10035,
+      "gitBlob": "87afef988e11d961e747ecaa25fb82edc6b84c88"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-qed-scale-hierarchy-stage4-1.ts",
+      "sha256": "781621c890ea2ea3a74078b4b8b407f16da9b7031f7969bc8c0e3c2f02debfdd",
+      "bytes": 24580,
+      "gitBlob": "96db135521e97fb29681b5a5fdda834641c849a8"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-quantum-foam-study.ts",
+      "sha256": "4554d687e01172d51d09b4c63c1dc8f0547d54bb70ec2065c6d0030804ecedf6",
+      "bytes": 8512,
+      "gitBlob": "3aa35100e1a4a8d74ee8d639267e66b918a5ffe6"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-retarded-source-propagation-stage4-2s.ts",
+      "sha256": "b25585834ff01ba23cf5605fa9099c958633c0403cc214e3f0c4f2d83c1b3723",
+      "bytes": 10162,
+      "gitBlob": "d952056027f5695aa7e1a751404521bb5b7281eb"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-schrodinger-mass-density-stage4-2j.ts",
+      "sha256": "99f70cf4dfde3699627168ca3112fb6aab0de170b93b9b3eb663ab2138a28dfc",
+      "bytes": 19561,
+      "gitBlob": "85eba7aa1b7977a6c65a886b3adff139749236f3"
+    },
+    {
+      "path": "scripts/research/run-casimir-dp-superconducting-boundary-control-stage4-2q.ts",
+      "sha256": "9f818538bf8d72c2acf158d0aa851ebb99578fab954dfcabb98e8064a998c0d6",
+      "bytes": 10663,
+      "gitBlob": "d4fbba9fec9bed40035dd559aacefbcbd7797ed0"
+    },
+    {
+      "path": "scripts/research/run-ytterbium-clock-proposal.ts",
+      "sha256": "7038c605ec048396306bad0230d6b3a6151ac20671cef3bcc549dc31d0c24638",
+      "bytes": 2041,
+      "gitBlob": "65f943d6374d2201a072535dd784adaf7313c4ef"
+    },
+    {
+      "path": "scripts/research/spin_cavity_high_signal_lead.py",
+      "sha256": "d0f3d3d9373e9c2951c4da1f410bea7386ef2f2f58887788e81c6db3c2fdffcd",
+      "bytes": 3607,
+      "gitBlob": "8248d76d9b707d7411f931a17ddf6655b933ae7a"
+    },
+    {
+      "path": "scripts/research/test_cherenkov_spin_stokes_reproduction.py",
+      "sha256": "c9329de6956ee0903018285a2f1cfcbe5f1f7c9ed8be44cfb93060656d5b9170",
+      "bytes": 2381,
+      "gitBlob": "0180f6847dd1546024b3a7a4182eb62a2e9c29a0"
+    },
+    {
+      "path": "scripts/robotics-benchmark-report.ts",
+      "sha256": "edfe4e3dbf3267bb1638ecaf4ff4362fbb04a0afe4a60c68cde4e1baa557feba",
+      "bytes": 534,
+      "gitBlob": "2ea05071da450fcc197762730593591aa94d49bb"
+    },
+    {
+      "path": "scripts/run-lean-lake-build.mjs",
+      "sha256": "56f78dd3a2b03e75a8f40272e684fe4ab2dc3ae8c233fe43f6e4fda9cde5b21c",
+      "bytes": 941,
+      "gitBlob": "b1cc77f410c1420870d3264ef7e01ac6d7e21657"
+    },
+    {
+      "path": "scripts/sector-control-repro-check.ts",
+      "sha256": "1f622f5ab3b9d35da5a455e3ffb49e182cecb16804c751150cf1a990d99c7a4e",
+      "bytes": 1601,
+      "gitBlob": "75ce1dab8201b44619a60e73881919c01504500d"
+    },
+    {
+      "path": "scripts/sector-control-repro.ts",
+      "sha256": "5edbb14ca425ade61f8ffbb57c03425785840dd0982555cb1a030b8d55728caf",
+      "bytes": 7460,
+      "gitBlob": "40a912b5129d0fd7313a636c3f160ad60d5b5457"
+    },
+    {
+      "path": "scripts/serve-local-connection-preview.mjs",
+      "sha256": "9793f8d130e16135f324e474586292e2eaac56c503f98cb24d42b42f669137c1",
+      "bytes": 914,
+      "gitBlob": "8d00ae0309a2914e1fc868ff19ba0cc2a5b406ee"
+    },
+    {
+      "path": "scripts/smoke-check.ts",
+      "sha256": "422391e3ecc20bb4cd76b321b852e51e83e5fc565df76dc0b8321feb123010da",
+      "bytes": 1663,
+      "gitBlob": "0292d0d04bc4c5ec2a237fbcdab2ddabb5a2d3be"
+    },
+    {
+      "path": "scripts/smoke-solar-runtime-candidate.mjs",
+      "sha256": "c1f0bc9784a17853f1f936f356c3007c216348d079694c62e9952eb83f9de833",
+      "bytes": 2991,
+      "gitBlob": "9c172715b9b0b1a670bd93122b5c908e619638e8"
+    },
+    {
+      "path": "scripts/solar-pipeline.ts",
+      "sha256": "fa369fd73fd8f733dea49ae5892bffbdc5f0004817e09702fb1e2276f9d83828",
+      "bytes": 12300,
+      "gitBlob": "402ca3969ab840103fac3ec55b2e38b4da63018c"
+    },
+    {
+      "path": "scripts/solar-research-prepare-local-record.ts",
+      "sha256": "3ec6f7b1997dcd43e998bc32b36dca3a4227097a7c0250df4d0e949225420e99",
+      "bytes": 2242,
+      "gitBlob": "1d653a1fc62640040ac93bdacfbe11a191b5391f"
+    },
+    {
+      "path": "scripts/solar-spectra-manifest.ts",
+      "sha256": "616c7067ad2396a1638715aed7c08a63b8927a00f227bd5a19c82a5d9c1c4cee",
+      "bytes": 4710,
+      "gitBlob": "0ecab1a4afc23d5c93f937e6c5356273e3e77a5a"
+    },
+    {
+      "path": "scripts/solar-workstation-demo.ts",
+      "sha256": "3b8bcbee85beaf6eac37a209647eea97dffef97620d50fd26521dc82052b0c60",
+      "bytes": 1379,
+      "gitBlob": "90678dc0322ea9767e3dd220c65f39ac6d05ef40"
+    },
+    {
+      "path": "scripts/spaceengine/build-yukawa-addon.ts",
+      "sha256": "b319617f688ec1ce035ab41535d1c264e7d49e42c14b39890c6308c0b2c7b65a",
+      "bytes": 1405,
+      "gitBlob": "90e2756ae89c5c79d0a3a5e31b3480fbebf6fc63"
+    },
+    {
+      "path": "scripts/specialists-mini-loop.ts",
+      "sha256": "742ae6fd05efe556427c61e51555c90afe0b3a69f1ec8c73f71bc5736b0d6f38",
+      "bytes": 5053,
+      "gitBlob": "70da9b7deb359593246b40a39031b203dc51ac0b"
+    },
+    {
+      "path": "scripts/stage-play-live-loop-validate.ts",
+      "sha256": "00217dd06583611a3c6231bd1cfa263e0f44824d4aa0a5f6552e1c050b4ef533",
+      "bytes": 13488,
+      "gitBlob": "0e4120e73105c45151d34b80d51ea31736cd34c1"
+    },
+    {
+      "path": "scripts/stage-play-mail-loop-timing.ts",
+      "sha256": "e1375afce2c133dfd76502b4f5a1477ff3093a1714b7c1d226f1683438987116",
+      "bytes": 17112,
+      "gitBlob": "24e6056733b14fe1eed6556174b72e6b42fffe7d"
+    },
+    {
+      "path": "scripts/test-onboarding-postgres.ps1",
+      "sha256": "e2e011da1dca12e77bebeb773049c13b160e75d67c595184fb6f91cfb7b49014",
+      "bytes": 4103,
+      "gitBlob": "d6040f2372897fc05d1b8e19be8d218c0f2e5e28"
+    },
+    {
+      "path": "scripts/theory-physics-inventory-audit.ts",
+      "sha256": "ac1adb35bdc5dbebea80792d925c49fc0556457f5fbbf1dfc7160fefced37963",
+      "bytes": 4374,
+      "gitBlob": "628bce0753322ab058e545365f705d5371de3054"
+    },
+    {
+      "path": "scripts/theory-runtime-adapter-gap-report.ts",
+      "sha256": "8399a4dd7ab9ad4ff8e07e9d922d6190446822cdf4ecc5582bd5d2cc0e479f3f",
+      "bytes": 4192,
+      "gitBlob": "8c0b70d5fe00fdc76fa29d57607e29551ec40b29"
+    },
+    {
+      "path": "scripts/time-dilation-activate.ts",
+      "sha256": "730d079da3e84e95039e6516d493500df08f0f4a3b877fed8994efee5ce98171",
+      "bytes": 4565,
+      "gitBlob": "248cb25a32f12b39417edd4e808d7be9d977233a"
+    },
+    {
+      "path": "scripts/time-dilation-debug-fetch.ts",
+      "sha256": "514eea5024e4a34a4ead6a494a1df03009d680f0cd150a079629c81c9d43d49d",
+      "bytes": 1202,
+      "gitBlob": "a1e2d86b4806c1950c371831cb097145fad3de32"
+    },
+    {
+      "path": "scripts/time-dilation-headless.ts",
+      "sha256": "a2e96adbce5f5cc8ae95323269969f07204e06c6ced41e44d56cb9cf42b74a09",
+      "bytes": 2424,
+      "gitBlob": "b0826ab33b19bb1eb19feb21046651ef65d700f0"
+    },
+    {
+      "path": "scripts/toe-agent-preflight.ts",
+      "sha256": "e9e41cb120f786c3b2f081e388c178b874f7b91f034e7b09d1cc1f5f89b5e89d",
+      "bytes": 12577,
+      "gitBlob": "67015a5e96052bb1986c37a31515a3914c8ce069"
+    },
+    {
+      "path": "scripts/train_verifier.py",
+      "sha256": "ac84305470238a00e8becb8590ad95991e3212a9125bc08d9c9c5929f8463719",
+      "bytes": 4383,
+      "gitBlob": "cabc50829cbce055bc88ab4d2e17449249ca30f9"
+    },
+    {
+      "path": "scripts/typecheck-ar2-main-source-slice.mjs",
+      "sha256": "b70b0fd3d32199ca081ff2819d11d6bade070ec59f3e07b51d3398a777e1dd74",
+      "bytes": 1825,
+      "gitBlob": "c0fee32720617f0e2f2b8d7ea0ea92f81a418aba"
+    },
+    {
+      "path": "scripts/typecheck-ar2-staged-app.mjs",
+      "sha256": "d440d06a12c768330f3ed0d4f53eadc1b42a3109683d19bbda61334187dbcaef",
+      "bytes": 3548,
+      "gitBlob": "5b15baa9cc26fbe5699c9a4b3d6f03f5a6f100f1"
+    },
+    {
+      "path": "scripts/typecheck-ar2-staged-desktop.mjs",
+      "sha256": "778bc6d27db5d47d75465d1bd7886a2d51ea90098b70f1b133d62f5a00079689",
+      "bytes": 3214,
+      "gitBlob": "039a43a5a9b358ba51c9b429c646124335a208d2"
+    },
+    {
+      "path": "scripts/upload-audio-to-storage.ts",
+      "sha256": "17168e4ba7dd61499292724967407785577ebcb57e39b5a25dd34f0116bcb4d6",
+      "bytes": 2127,
+      "gitBlob": "bd913bc95957ba8207fe8e861d1349efa65efe62"
+    },
+    {
+      "path": "scripts/upload-runtime-artifacts.ts",
+      "sha256": "8c3ab6cdcdc38028caf1c9a1348dd5608dc41ea8d32ac5068639103849832fcb",
+      "bytes": 3448,
+      "gitBlob": "410004ccea3e12a843047f963967fbd3ff0a944b"
+    },
+    {
+      "path": "scripts/v0.1-signoff.ts",
+      "sha256": "deda3bda40a74d22bd6ffd3b85b9669160921d4de11f6cd3b3c74efaee5fec17",
+      "bytes": 9104,
+      "gitBlob": "82267744ec7599e93ceca81a4a5dd82c62b770c5"
+    },
+    {
+      "path": "scripts/validate-agent-context-checklist.ts",
+      "sha256": "9032b6c522d019a4d05fa9c10a7b6c0739e0f8a3ddef8966cc9d71360deaac2e",
+      "bytes": 11419,
+      "gitBlob": "85e09ae8fff9d668eb52b34795c7defec1d0be1e"
+    },
+    {
+      "path": "scripts/validate-agibot-asset-manifest.ts",
+      "sha256": "1c346e666db817f4bf96f64a692740d182ab6ed2758467c2ec91918eb16fdf17",
+      "bytes": 3318,
+      "gitBlob": "03bb1836eec075eca3fa5035cf79d630addf9b45"
+    },
+    {
+      "path": "scripts/validate-curvature-collapse-contract.ts",
+      "sha256": "c4b407b2b127222c7fc5fcaa8e7cf5482ddb1160bd182f6773ddb4ca7fbdc0ff",
+      "bytes": 7306,
+      "gitBlob": "8c0d966502ce917f4f59a4cf14dad118d279a9e0"
+    },
+    {
+      "path": "scripts/validate-external-integration-manifest.ts",
+      "sha256": "24b6c51bd862cf2bdb9b4762cefcee17df3aeb9317886a86cfad7d159fd42284",
+      "bytes": 7113,
+      "gitBlob": "bfcfa5edd6577669b8130f45a69513f8a58ddbf7"
+    },
+    {
+      "path": "scripts/validate-helix-dottie-docs-schema.ts",
+      "sha256": "976a4f6b7f076e6b8c5a92d677442d570e5e8d100bab9ee8f4e4544b40e6cc6f",
+      "bytes": 2938,
+      "gitBlob": "75fe9bb9155980a25e5835da900762ff3260a85a"
+    },
+    {
+      "path": "scripts/validate-ideology-verifiers.ts",
+      "sha256": "d25b8bc2aed00ad9086e349d05c245e6a74fe663b31195eb118ac3eedb450b1a",
+      "bytes": 1456,
+      "gitBlob": "8c1619464d8ae3b73449dc78541cfe2b3305d65d"
+    },
+    {
+      "path": "scripts/validate-math-congruence-matrix.ts",
+      "sha256": "a0c78ca9a4f4888aef9c89e9051f316af4fd1d86ed595d7fb0073af57ab087c7",
+      "bytes": 5513,
+      "gitBlob": "b3a6c3b7abc87da0c72b82b6926d5fb2a0e625c7"
+    },
+    {
+      "path": "scripts/validate-math-stage.ts",
+      "sha256": "30e73ea5a1e8e34f6a6290bc1c032c8a9594700e5b113dd101a4b5f4c25bdaaa",
+      "bytes": 21428,
+      "gitBlob": "faf635d0f77b3c2d417749aa65e2eb08ecea8fbb"
+    },
+    {
+      "path": "scripts/validate-needle-hull-mark2-cavity-contract.ts",
+      "sha256": "82f5a4de03fde83324ca21e23f6d93dc7257b4c07ad4962b5056e660f6b17441",
+      "bytes": 2172,
+      "gitBlob": "0c3220edd82f065ed3da7991cab5b03aa73398f3"
+    },
+    {
+      "path": "scripts/validate-physics-equation-backbone.ts",
+      "sha256": "00bab73de8f57ee0ca1250958bc8e56c0c405caf85be1d2574ff1a951cc79875",
+      "bytes": 6213,
+      "gitBlob": "ab88e1c29e035cd122708061b6b2e3813176abc8"
+    },
+    {
+      "path": "scripts/validate-physics-root-leaf-manifest.ts",
+      "sha256": "66be768a8efd38ef9a49a78ac0e8bc7a9bce89cdb935088859969b2a74da07ff",
+      "bytes": 21220,
+      "gitBlob": "fe46302f5ad4ad63d4f9d15f5bc904a51d550737"
+    },
+    {
+      "path": "scripts/validate-resolver-owner-coverage.ts",
+      "sha256": "18c8b9d00519f2924c602b92fef9deaf8f828de686331820a72ed5eac4165965",
+      "bytes": 3640,
+      "gitBlob": "4311cbe458bb5f0329075909ef08f1884f6a9385"
+    },
+    {
+      "path": "scripts/validate-toe-research-gate-policy.ts",
+      "sha256": "dfcec86076ea38d1889a70ce2f4fb35bae0d17df7798bfb2880dec95542d22c4",
+      "bytes": 6025,
+      "gitBlob": "503a8f55a31b07313e0140927902c3fb78f4f3f6"
+    },
+    {
+      "path": "scripts/validate-toe-ticket-backlog.ts",
+      "sha256": "01767605ea666e82b0a4e46fb47a78baa4ac5c3895362c5d7e0966d15a5f0977",
+      "bytes": 8287,
+      "gitBlob": "a1f7a072bb9c5ca9ac398dfccecb08a905a6a51b"
+    },
+    {
+      "path": "scripts/validate-toe-ticket-results.ts",
+      "sha256": "4286a6854aad372288d5d7700df0b6e391f7bfc95a19ad1b9bf08d8e47007552",
+      "bytes": 12955,
+      "gitBlob": "20a7c06ad3e05dfb3f0e0fd01e7fc2b97ffd5c0a"
+    },
+    {
+      "path": "scripts/validate-uncertainty-model-registry.ts",
+      "sha256": "3972121620d2489c5ebbdac620c723cf5f428ee2bbdaeefbc9d4b71ab993fe61",
+      "bytes": 3683,
+      "gitBlob": "84c0b2a0be39c9144a578e41fe6231897334f46b"
+    },
+    {
+      "path": "scripts/validate-warp-rodc-claims.ts",
+      "sha256": "51ffe1cd73d0040d33b812c85c32a10a7880be00fa24045dabc1e9284c18bf82",
+      "bytes": 17555,
+      "gitBlob": "8583fda3eaf1e9d1a5b6633643f48119b78fc158"
+    },
+    {
+      "path": "scripts/verify-domain-launch.ts",
+      "sha256": "7ed3cf5eea1024a263db63853f9a9b7de46aed3f362f5701683d194545ce1ac5",
+      "bytes": 3776,
+      "gitBlob": "d43040d7d6a3696f9a609f8c6912d9f7f497243b"
+    },
+    {
+      "path": "scripts/verify-local.ts",
+      "sha256": "2ed13d86f044a92476b335340639af7007cbc23632e4af1048156b8153fe9559",
+      "bytes": 4384,
+      "gitBlob": "36f6be810868d7c1fbb6ea08be28e76f05c7e263"
+    },
+    {
+      "path": "scripts/verify-private-managed-ai-postgres-fixture.ts",
+      "sha256": "6a55910568479feee21a7e4bea98ccb601d8bc245bdeb32dd72f0e2d4e163f36",
+      "bytes": 6783,
+      "gitBlob": "6a747700ac3b489ee20e5b8d294bcb851f32b9fc"
+    },
+    {
+      "path": "scripts/verify-site-delivery.ts",
+      "sha256": "e407d723bccaade62097d1d45041b9d0286e6547c169411d1b0f53d9c4bdbe70",
+      "bytes": 2271,
+      "gitBlob": "b97833992508052b6f096f9c3e2bc81ae5b66019"
+    },
+    {
+      "path": "scripts/verify-solar-cached-processing.ts",
+      "sha256": "656430abc65802ceed713c95667d738176f25fe2d4596ffac249e6a2a02cf84f",
+      "bytes": 3122,
+      "gitBlob": "bd474d44804e58510e1955ed7879960b252eda7b"
+    },
+    {
+      "path": "scripts/verify-solar-evidence-package.ts",
+      "sha256": "4867f67e070b1fb58db46a2a6781b51b1879ff5e6605f588baf172f531b31035",
+      "bytes": 4373,
+      "gitBlob": "84ec09f44349d5404e4a045e0c19c82e38100d98"
+    },
+    {
+      "path": "scripts/verify-solar-live-processing.ts",
+      "sha256": "5d3d14969a37fb146214c67d05c08adcd8ccb5939f419fc32a5ca7e00660f3c2",
+      "bytes": 3750,
+      "gitBlob": "4c215766f3ccba89a7b0f1672bf5176dbac488d6"
+    },
+    {
+      "path": "scripts/vite-lucide-direct-imports.ts",
+      "sha256": "e7b502f89d34c95f3f12b556ea9c56ffe6fbb334487274d806135f44e3bb77fe",
+      "bytes": 4554,
+      "gitBlob": "a11fc0efdf246f448a1afcb33b4d483295e83ce4"
+    },
+    {
+      "path": "scripts/vite-production-runtime-vendors.ts",
+      "sha256": "e959344b2a0f05b558a898054a1efee1d0193eb0da5430171c43118fafa8fd28",
+      "bytes": 8641,
+      "gitBlob": "e80b2232025b70a18606601b7732752f226e141f"
+    },
+    {
+      "path": "scripts/voice/export_voice_bundle.py",
+      "sha256": "9b482c90214a4324e784fa0d431ac11eea9fa4afc61b4a484a89954c27c8f96b",
+      "bytes": 1939,
+      "gitBlob": "801a9cd7e56fcd17e45a6827caa5a0693ed1dfe5"
+    },
+    {
+      "path": "scripts/voice/prod/build_voice_bundle.py",
+      "sha256": "a6d80d36018ac6a6806e1f6ee89b5aa2ccf96460e581b5b95079788e630521a7",
+      "bytes": 3767,
+      "gitBlob": "5d66b2ce6ebf4b1dd72d016366faf2b7174a68bd"
+    },
+    {
+      "path": "scripts/voice/prod/eval_nemo_tts.py",
+      "sha256": "3e11c3b7129145a4b16edd300c78eb8f47aba5503abfb4561f9d7411d2b0d547",
+      "bytes": 2568,
+      "gitBlob": "7501be8b8b03b5687a7a7bdbec63d4b960962ddc"
+    },
+    {
+      "path": "scripts/voice/prod/promote_voice_bundle.py",
+      "sha256": "b2a25199c83115569280e5560c5de4bdd46f06dc261526c17f7b54d845f67d35",
+      "bytes": 6424,
+      "gitBlob": "060e0e6ae052343f23d6a5813f19211a6eba947e"
+    },
+    {
+      "path": "scripts/voice/prod/train_nemo_tts.py",
+      "sha256": "247dc0c7afe738c67d50b9110f901320c15bd5d3f43c0a7f643b1e48e358997f",
+      "bytes": 18649,
+      "gitBlob": "ce654c3efdbc68ab4a30f7ef2e2a26e430c5be3a"
+    },
+    {
+      "path": "scripts/voice/run_colab_train.py",
+      "sha256": "ceed9fcd92fe57de6ca6d8268803f25d4aa127c1c3cc22297c90a3adef5791c7",
+      "bytes": 12792,
+      "gitBlob": "9491b2517fa056c56ceab4d486dffd94912a2406"
+    },
+    {
+      "path": "scripts/voice/serve_nemo_tts.py",
+      "sha256": "cc9cb642ee4ea09b999fd5343bd5c0e19452e7e44993d9f876154f9d85ad8392",
+      "bytes": 11069,
+      "gitBlob": "20f2f0c4886db03f59bd8797b735627e8e8585d5"
+    },
+    {
+      "path": "scripts/voice/train_production_nemo.py",
+      "sha256": "fce5e75c313fca3ad4b10ee49a0938d91aac4c561b5ab4960a8a370334f25474",
+      "bytes": 1698,
+      "gitBlob": "575cf4bcb976486600a402e21ef1fb26fd927beb"
+    },
+    {
+      "path": "scripts/voice/train_production_tts.py",
+      "sha256": "d4f664b5e1b4906e19e8723453ba8941c1d47e88d0a79b87c21616a908e61faf",
+      "bytes": 4018,
+      "gitBlob": "45202800daef0dc650b3ec9b18ac6e111b4cee85"
+    },
+    {
+      "path": "scripts/voice/verify_weights_manifest.py",
+      "sha256": "42d780d7b63e9698070c33cc75e0915d40ff4eec827946bc1593bcca6d875023",
+      "bytes": 2318,
+      "gitBlob": "f581e77ceacc81cbb451a08d2fbc59b8ffa2aa1c"
+    },
+    {
+      "path": "scripts/wallet-agent.ts",
+      "sha256": "8289fff1dc1d079a218a8c747c78020e3502a0f09ea0d8008007a2467ef44f85",
+      "bytes": 6098,
+      "gitBlob": "0c9627b2e6db35c236ce84d7cb21912c45d20735"
+    },
+    {
+      "path": "scripts/warp-canonical-runtime-snapshot.ts",
+      "sha256": "7b35201895786d567766a091766218fe677f8e678ecb857ade5f3ae009f6d258",
+      "bytes": 6294,
+      "gitBlob": "cd2f66eb3b45a96eab2dd46106dcebc37f985c19"
+    },
+    {
+      "path": "scripts/warp-deliverable-build.ts",
+      "sha256": "cb78b9411c73612b713c410c7fa86df7ce2b0def305680860b2095f9dcd02b4f",
+      "bytes": 18070,
+      "gitBlob": "f96b13ae6fd2596989c8ed35ece33f7694a7a9fe"
+    },
+    {
+      "path": "scripts/warp-deliverable-bundle.ts",
+      "sha256": "1d5b2dcc63f32a84d4ce56efc2d46e809a39d20348922c6a650a9e05fd6fcd1c",
+      "bytes": 18119,
+      "gitBlob": "31147e0057fad50d81538447c24033f313024cfc"
+    },
+    {
+      "path": "scripts/warp-evidence-pack.ts",
+      "sha256": "bf7065b12e94be5f1c213409c67f50ddbc5aa6740fa12873a49572e169b30670",
+      "bytes": 2749,
+      "gitBlob": "1492f7915af2a4f3f77736de530d948a410c9b44"
+    },
+    {
+      "path": "scripts/warp-evidence-snapshot.ts",
+      "sha256": "0fb49c2bc2bb7a00a2525ca105ebd0c266465a4ba5628324267f14ae70c77468",
+      "bytes": 12487,
+      "gitBlob": "f9bad98e9e0c374762f59c7a7bf9527d2a29c8fb"
+    },
+    {
+      "path": "scripts/warp-external-work-compare.ts",
+      "sha256": "dc31c6ab655d2c4905ed6665b7404e51f1824b43426355cc5d07e565f392bfab",
+      "bytes": 13799,
+      "gitBlob": "76f8c01bdd1174ccc720f55734c48aed1c908fa5"
+    },
+    {
+      "path": "scripts/warp-external-work-matrix.ts",
+      "sha256": "058f1f7d9710129d599d309aebbbb3696e4c7404539444cb4579960476b1513e",
+      "bytes": 8784,
+      "gitBlob": "af7e747587e05e588bd254ec1c80938ba2836791"
+    },
+    {
+      "path": "scripts/warp-external-work-profiles-validate.ts",
+      "sha256": "d01176d60689c1115fa9af988142aae597f657591fd35dfcabf6cb836654109d",
+      "bytes": 18537,
+      "gitBlob": "2020a757f4890bd70c4d2d2d0c5db98628b79ae3"
+    },
+    {
+      "path": "scripts/warp-external-work-reason-reducer.ts",
+      "sha256": "aa94e3bbe949cb4e98d12fa73eb8223722906373bc50c862d76f6f0d36577abe",
+      "bytes": 2791,
+      "gitBlob": "36b32ed00dbd5fc29687ea08e3b83d1a6f0f220b"
+    },
+    {
+      "path": "scripts/warp-external-work-run.ts",
+      "sha256": "c0098585b48f61c75a1278734e3be687ebc1e7a29169a43bd371e1db49b8bafd",
+      "bytes": 22588,
+      "gitBlob": "73eeab82dfe6ec34f768bc6deaaf2fb7493dafcb"
+    },
+    {
+      "path": "scripts/warp-external-work-utils.ts",
+      "sha256": "325cfe1477f58442e4115d948367d5ae771cbecbebfd270e81b4fb31b594cb5f",
+      "bytes": 9114,
+      "gitBlob": "729f278d2f6efeed2495217b6c724c45611d8262"
+    },
+    {
+      "path": "scripts/warp-full-solve-calculator.ts",
+      "sha256": "b8158f6f5a14e37d8362bf5e1886a3462e1948fbdb16b0134da07f07b1ca7fe2",
+      "bytes": 12261,
+      "gitBlob": "54d4768724e52c14f4ae7a122c2e35d5daacee28"
+    },
+    {
+      "path": "scripts/warp-full-solve-campaign-cli.ts",
+      "sha256": "2018d6a8dfb4cf88717f0afe7ae70a17cda4b5bd1e6928ecc8cd797076d7f947",
+      "bytes": 699,
+      "gitBlob": "373653c412f6b2ac642480764fc139883aed2d3f"
+    },
+    {
+      "path": "scripts/warp-full-solve-campaign.ts",
+      "sha256": "d713f99af7613540f8cfa96d4fd03fd59cde89b177f2ed01e27419d6d3c8d069",
+      "bytes": 153429,
+      "gitBlob": "2d50a1034cb93496222f6a4fe7b5e83a229aca91"
+    },
+    {
+      "path": "scripts/warp-full-solve-canonical-bundle.ts",
+      "sha256": "ef8d4b6e1e9a45f5e7c093458c24696421e251f178f8c976da46051218d39a3c",
+      "bytes": 15354,
+      "gitBlob": "c27183c2bbd20ddb0c44330826d9d3986dedb90f"
+    },
+    {
+      "path": "scripts/warp-full-solve-geometry-conformance.ts",
+      "sha256": "c5d4032de27da22f5ab343e92550d0a9e690ceefe7a9c3904ba98ab56d832edc",
+      "bytes": 4281,
+      "gitBlob": "1a358bdc05cd954fd9514cd6ec60759f28f80b5d"
+    },
+    {
+      "path": "scripts/warp-full-solve-promotion-bundle.ts",
+      "sha256": "ddcaf3f4a75c22ad3f13cc77c3481fbd003cab221a3864f8006a2a66d24c75cf",
+      "bytes": 15203,
+      "gitBlob": "55833c73af0d72348c5b41aa27e5c9037a7c4f7f"
+    },
+    {
+      "path": "scripts/warp-full-solve-reference-capsule-validate.ts",
+      "sha256": "244f0a14ed3ba72576a78863e58493db0d346db3d7a7b7e209aad27baf4e5944",
+      "bytes": 26036,
+      "gitBlob": "ad3bbdc72e33406505d63956a50e0df6ab693898"
+    },
+    {
+      "path": "scripts/warp-full-solve-reference-capsule.ts",
+      "sha256": "d79f642c26e17c49f143573c76b169d11b617df226a5e8cca25f3058e7dcd0b7",
+      "bytes": 48659,
+      "gitBlob": "277310c13933f8a7b7c19e79f8d0cc84bc839ec1"
+    },
+    {
+      "path": "scripts/warp-full-solve-single-runner.ts",
+      "sha256": "f3305ee2408dadbb899df4afa89c463a935f6f0694ec2c276babc6c617ed7c23",
+      "bytes": 1697,
+      "gitBlob": "4f68aba4bfb85be349bf0662a71e4480339a5055"
+    },
+    {
+      "path": "scripts/warp-g4-autoloop.ts",
+      "sha256": "84f390e4b1c049fed94d9a63911c85f44aa94596a1d5bba658408b81301add5e",
+      "bytes": 19536,
+      "gitBlob": "74898cfb23ff81c61de6673ab197cd2ab3b24f92"
+    },
+    {
+      "path": "scripts/warp-g4-candidate-promotion-check.ts",
+      "sha256": "6e8f0b59a2fe0fa451e36151b3ac9931bbe90bac56fbe8f33165c4e68b568d68",
+      "bytes": 27985,
+      "gitBlob": "668da7b466da00a2e9ab9516fddbf9c7615f39f2"
+    },
+    {
+      "path": "scripts/warp-g4-coupling-ablation.ts",
+      "sha256": "a57cd159e4ba42a62ce1c819a4ee3d7c62a720436bb9fa12d681a523c281f9b6",
+      "bytes": 11838,
+      "gitBlob": "dd5ae1d6f689514b3a35098afa31a7addf8e150b"
+    },
+    {
+      "path": "scripts/warp-g4-coupling-localization.ts",
+      "sha256": "2af873aeb43fb05a36d08ffed57fbe7e7bde2af5cc447e7ef6f29f03a510fcb3",
+      "bytes": 23287,
+      "gitBlob": "38350f7c170c50f2f8259fcb40131003b3948564"
+    },
+    {
+      "path": "scripts/warp-g4-curvature-applicability-audit.ts",
+      "sha256": "f783a39d3a389646abca3ebd1c504bfe08d8899e8ac6f8deea9e3a6c529a2b54",
+      "bytes": 13006,
+      "gitBlob": "b073ff3d631a586c34535c45a4b43855d65a976e"
+    },
+    {
+      "path": "scripts/warp-g4-first-divergence.ts",
+      "sha256": "16a03431115a50b5d45704666f99b09362abb9f868f257de360d842160ee6f1d",
+      "bytes": 15477,
+      "gitBlob": "632608d73af431feb5376123d6f3e93b9c9c6f20"
+    },
+    {
+      "path": "scripts/warp-g4-governance-matrix.ts",
+      "sha256": "bceebeb5d93bb4af3327ca3089da7295788962d53bac08a8e8069b861f6ef7a9",
+      "bytes": 11027,
+      "gitBlob": "59bd1585e01ef0dd967aaab5429ffe106dd5153d"
+    },
+    {
+      "path": "scripts/warp-g4-kernel-provenance-audit.ts",
+      "sha256": "ccb968506de88ef7dc4f86ba10783f680f8db3168e2acefde342300b12fc4baa",
+      "bytes": 10901,
+      "gitBlob": "3f7f97b5b1811ea12a8d81f85cd6484167a27682"
+    },
+    {
+      "path": "scripts/warp-g4-literature-parity-replay.ts",
+      "sha256": "b4b94eb669e44ca6f2a9aeec4bd6b98455f9481a9f5ed212dfe2c9f5cbad3d2a",
+      "bytes": 14075,
+      "gitBlob": "4b70cc5f57d872281cb1f2e24ccd1ddd25127d3c"
+    },
+    {
+      "path": "scripts/warp-g4-metric-decomp-diff.ts",
+      "sha256": "f78eae0e9f2c61affa256a3d692dcb31d313828caa80160cad9fae85f9274e6e",
+      "bytes": 14339,
+      "gitBlob": "e1b87cfdf1a262334375ab51fcc9adedc13f89a0"
+    },
+    {
+      "path": "scripts/warp-g4-operator-mapping-audit.ts",
+      "sha256": "a6ea37c2be854f33ea62b4de497eea78741f2b1835b1cc942dcd0e233f5cd1c0",
+      "bytes": 10556,
+      "gitBlob": "5c40ec7ca8cfb46b6d46b30210cc8a13f37863cb"
+    },
+    {
+      "path": "scripts/warp-g4-recovery-parity.ts",
+      "sha256": "e74c396c5aec18259e523f373c096be94ca849f84cefebbf3c970fb70d939404",
+      "bytes": 15663,
+      "gitBlob": "abbb75c5a1f94efc1b0d9be4a4e2e71e06ee242c"
+    },
+    {
+      "path": "scripts/warp-g4-recovery-search.ts",
+      "sha256": "d3d90825d5a02f7f4c9f782c66b4e0e4fa2334d9006066a4a00fc7274540d209",
+      "bytes": 59802,
+      "gitBlob": "7589aefbeeb3aac29b1fee95ce2791dda4cc464c"
+    },
+    {
+      "path": "scripts/warp-g4-semantic-bridge-matrix.ts",
+      "sha256": "9e11cd91bbed308002312a315912ceffec6f2c495b42e9cb442354e2276d6ca3",
+      "bytes": 13206,
+      "gitBlob": "d793bc400ac3a3a382865010183d87c00e668235"
+    },
+    {
+      "path": "scripts/warp-g4-sensitivity.ts",
+      "sha256": "9c780f9b99a0df2e7be7f39eea7c113f95a092903d9eae7f280bee60194016be",
+      "bytes": 15454,
+      "gitBlob": "9e7fc982e386d357e0651bc1e56327ecf3eee4ff"
+    },
+    {
+      "path": "scripts/warp-g4-stepA-summary.ts",
+      "sha256": "d885d090460a4a74286b1850eb25c5597570ef1cf1d7c4522ab7b2972679754b",
+      "bytes": 11152,
+      "gitBlob": "0e5bddd9fe7c22767b7ce00e83c25c76fcec2dd0"
+    },
+    {
+      "path": "scripts/warp-g4-uncertainty-audit.ts",
+      "sha256": "55c16455933e5d5c02d97099bbaeb953d76121fcc1a15d805396edb72d2ebf64",
+      "bytes": 17077,
+      "gitBlob": "db89826feed4e9647c13a2939135673204bdd56d"
+    },
+    {
+      "path": "scripts/warp-integrity-parity-check.ts",
+      "sha256": "744619c78a0f941516159c56f2060e321809e1df41677af242a91510de338a33",
+      "bytes": 45872,
+      "gitBlob": "0a3cc5743b695b4ddb05cb7188d9165e86564b42"
+    },
+    {
+      "path": "scripts/warp-needle-hull-proof-anchor-index-sync.ts",
+      "sha256": "f0611fdd4eaef13b25c25570419007e4ead1098e0f8f764dc886058d77d00adb",
+      "bytes": 7475,
+      "gitBlob": "542a5a99ff9adf744a6a947950ed8be92a53a076"
+    },
+    {
+      "path": "scripts/warp-needle-hull-theory-directory-sync.ts",
+      "sha256": "f09a090f69796017e92ec8fb0f99f20a58f56e1084033dfcae2e4ca3c10f20e1",
+      "bytes": 10502,
+      "gitBlob": "368e08be68ecd4246248e7cf5aba28b740674126"
+    },
+    {
+      "path": "scripts/warp-promotion-readiness-check.ts",
+      "sha256": "f4387526685d50c2f10fd8f8024f0069a051228802137a9a6197cefa202ebbbd",
+      "bytes": 28414,
+      "gitBlob": "d25595de46e7396883b7b13e5e01f4e90b7bb534"
+    },
+    {
+      "path": "scripts/warp-publication-bundle.ts",
+      "sha256": "2bbeed82beb6b8b0ae922e8887c02dc856ecc04dc222ea2593765fd543a85b0c",
+      "bytes": 5668,
+      "gitBlob": "48d4072b81cd6abacc3c57f70a97959bc934e993"
+    },
+    {
+      "path": "scripts/warp-render-command-capture.ts",
+      "sha256": "7040193750c146471a7e6fe088b03853cbe8d5bf35dd06516560b264e7038044",
+      "bytes": 39890,
+      "gitBlob": "77ec9f956657983b14457b13fa303300cf85e62c"
+    },
+    {
+      "path": "scripts/warp-render-congruence-benchmark.ts",
+      "sha256": "8cf684089491dc13894be0698d12200e94fb65d3fb257693ddc1970fc3045492",
+      "bytes": 26521,
+      "gitBlob": "1dad7e46fe02f46b30b20c8f759e95a0da0c54d9"
+    },
+    {
+      "path": "scripts/warp-rodc-drift-report.ts",
+      "sha256": "2a3d6c631c6a00f7b0c9fcc6a40d2677dc482a1e5c19a471cca275189eec5bf4",
+      "bytes": 16037,
+      "gitBlob": "55b40a0cbb9659396763d28e20b1547493ab4fb0"
+    },
+    {
+      "path": "scripts/warp-shadow-casimir-sign-compat-check.ts",
+      "sha256": "a45de239d498637f6191689b062c717a49ed0c47a994de93ba7d9cccd49edaa2",
+      "bytes": 13452,
+      "gitBlob": "616a7e0da5e0aca32738f510aa929b2eb8a33fb1"
+    },
+    {
+      "path": "scripts/warp-shadow-casimir-sign-pack-builder.ts",
+      "sha256": "f7745257e869a4de50753b38ff03302d823a95293dcbe306d48de4d162de569d",
+      "bytes": 10662,
+      "gitBlob": "7d26e0c43ef02684644762cb2ad9ee20ac5132f3"
+    },
+    {
+      "path": "scripts/warp-shadow-gr-frame-dragging-replay.ts",
+      "sha256": "7bbc7033d0fc193ce524b8fb5d04772cf6ab3d0a7abeb105d36e081927698d25",
+      "bytes": 10369,
+      "gitBlob": "e97421e1831808c874252c50ffa4f359face5b98"
+    },
+    {
+      "path": "scripts/warp-shadow-gr-lensing-deflection-replay.ts",
+      "sha256": "900938fec77348bcd2664ca27a76aada7415f3615f68cd0ca459ee3fa7383c16",
+      "bytes": 10669,
+      "gitBlob": "5d0f7a20f4c9344079548604840c16e33073962a"
+    },
+    {
+      "path": "scripts/warp-shadow-gr-mercury-precession-replay.ts",
+      "sha256": "3b4e026b1e3273e48e237d7845f0428b5416b162900e4217d5a9f3a48f9e660c",
+      "bytes": 9964,
+      "gitBlob": "bc4b1780d3f5e5e2f18038d132e465089e4ab236"
+    },
+    {
+      "path": "scripts/warp-shadow-gr-shapiro-delay-replay.ts",
+      "sha256": "57276f4385a0a25708a4b17411c32dab7e39c896460a7f8044ceb6d2c2109a97",
+      "bytes": 8488,
+      "gitBlob": "ca02b698c6e98ab2376fc71bfcde72055e66d1ba"
+    },
+    {
+      "path": "scripts/warp-shadow-inject-recommended-profile.ts",
+      "sha256": "2fd99dbf6161d596abed8ca348a60da0dbaa4330dce6f1a2a8c319678a38b4c8",
+      "bytes": 13417,
+      "gitBlob": "248885f866b1be805f2febdc466deecac1133551"
+    },
+    {
+      "path": "scripts/warp-shadow-injection-runner.ts",
+      "sha256": "af4843e7e62fc0bc554628b03d4e7156c5b364d6c9b11e87c374cd82a8d39485",
+      "bytes": 24580,
+      "gitBlob": "98dd3346cf7a4478a419c7a625293528b534b3f2"
+    },
+    {
+      "path": "scripts/warp-shadow-nanogap-compat-check.ts",
+      "sha256": "1ccf116a1edad26f73e611e4c605410cef0f0644704367b0e9e40744bda63557",
+      "bytes": 12874,
+      "gitBlob": "53a40ae5c8df096b2d14a238c2cd37c55d04e884"
+    },
+    {
+      "path": "scripts/warp-shadow-nanogap-pack-builder.ts",
+      "sha256": "1712893ce61985a4652d44a4fbeb2a28752be428639d942db2b7de3692ba97ed",
+      "bytes": 14210,
+      "gitBlob": "b0d60b829383a15153b71ba73cb38f729ab56522"
+    },
+    {
+      "path": "scripts/warp-shadow-nanogap-repeat-determinism.ts",
+      "sha256": "d773e931f3f1b8e37072c55621f441044f2e3e1c6a1405f241ad38fe3bc48a0d",
+      "bytes": 8474,
+      "gitBlob": "ad79eca1fe8bc0563fb266c731c9cf9deca44284"
+    },
+    {
+      "path": "scripts/warp-shadow-q-spoiling-compat-check.ts",
+      "sha256": "f7c5612311d4ecc4747629c157553aedbe131e7088950233312de22c150813f0",
+      "bytes": 19168,
+      "gitBlob": "06195a34cf4ddd02f6f78ec9ece42eeaaa358a1d"
+    },
+    {
+      "path": "scripts/warp-shadow-q-spoiling-pack-builder.ts",
+      "sha256": "ee99259fe044b78a0f21e4c6a4bd25a0192136595d4532324234e97c3ef2964a",
+      "bytes": 20735,
+      "gitBlob": "f53f19f40f8dfa9b656e3acde547af9fae9066c9"
+    },
+    {
+      "path": "scripts/warp-shadow-q-spoiling-repeat-determinism.ts",
+      "sha256": "03a6816ad8bbf575d364b6b8965bfedbd47ee2e88701068829733d36f914e210",
+      "bytes": 8478,
+      "gitBlob": "104f9913864d4bffe2aa5cfdc271dcf889bb0edf"
+    },
+    {
+      "path": "scripts/warp-shadow-qcd-analog-replay.ts",
+      "sha256": "2d8353c78fab6898134e10a40571d0d3e3f31c5e86d889fcd1b32edefcfb9e2c",
+      "bytes": 21938,
+      "gitBlob": "f8f905573e2b32362d14710b965edb51eb7998f2"
+    },
+    {
+      "path": "scripts/warp-shadow-qei-recovery-check.ts",
+      "sha256": "2fee4d907ee827864d45883805634bf2a67728ea1583e45b4542faac772b4384",
+      "bytes": 8070,
+      "gitBlob": "3937b70f7f94d7932943a3216d5d6b70a64afca7"
+    },
+    {
+      "path": "scripts/warp-shadow-scenario-builder.ts",
+      "sha256": "73d2519efce674f14bac96eb51f0b501a2e49bf7cdb43a1297c554e53b1a0801",
+      "bytes": 32434,
+      "gitBlob": "125ebc7490373f4f938399090fbc695699836b4d"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-compat-check.ts",
+      "sha256": "b0213ed25b7baab1b83b3c11002cb171ade09ac46579ae471a72b2ef5f45e30f",
+      "bytes": 18496,
+      "gitBlob": "f0bf71b6f0588ae5268cf7184943c504fbc3f49c"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-pack-builder.ts",
+      "sha256": "2e508530aa38f34f695c524c0bf2e1b10496576c03728d4a5fefb9f722b3c01d",
+      "bytes": 20594,
+      "gitBlob": "56af19a264988001e5d43de927a1e420f816735d"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-paired-evidence-validate.ts",
+      "sha256": "170d746f408aec929a487a411877063dc5046d883dcfe9e77a4f97d284522a83",
+      "bytes": 11543,
+      "gitBlob": "bd92ab1b2cf3408890643632724aedd11f3ffbb6"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-paired-manifest-prepare.ts",
+      "sha256": "d1ee2cfa7dfc4dc2e29e9f93c92c0dbb9de4e843bdccbacbd3ccc3584ea9cd4b",
+      "bytes": 6401,
+      "gitBlob": "3eab75486ec1990e1b21dc55e933db1d51833963"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-paired-run-ingest.ts",
+      "sha256": "0a743805cc9ae343eeb4c017a98feeee0db4ede1ecd11cd91a661b4d87d3f543",
+      "bytes": 25037,
+      "gitBlob": "1008d0af2619deb8462ce8501bdd651f7d01a6db"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-publication-overlay.ts",
+      "sha256": "edf6d1c7c4d95ae332b7ae71f21ddfe8e4b1bd122b38cb09c293ddc3c87a7399",
+      "bytes": 8279,
+      "gitBlob": "7f9e180e6fff3bb4bf263da27e88856070652867"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-publication-pack-builder.ts",
+      "sha256": "f3fe7a4549913c1a123566d93e7cbc2eb50be3d7fca00f31885fe5e3a9053efd",
+      "bytes": 9649,
+      "gitBlob": "7b00a42381ad8a16aa6ba6d58294dadc6976e6df"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-repeat-determinism.ts",
+      "sha256": "758d9b833be36ff2a69fbe2db4bf61b501e17a058084e106dd3cd2b9169f5fc8",
+      "bytes": 9789,
+      "gitBlob": "0935d52e5b0cb836b34da9b6d6ccfd0782e29ec5"
+    },
+    {
+      "path": "scripts/warp-shadow-sem-ellips-reportable-attempt.ts",
+      "sha256": "47e0053c263d302510bd3a7e4380a5f2fe236db4089af2297d7307fcf79a7207",
+      "bytes": 17965,
+      "gitBlob": "f956ad9d10a345d2c333c5c99a4854c69d15e825"
+    },
+    {
+      "path": "scripts/warp-shadow-timing-compat-check.ts",
+      "sha256": "3dc4c7d9ee5d1a03de56ad3819c48802e7026926d686db066dd87e6fbf123e79",
+      "bytes": 16981,
+      "gitBlob": "3a03556d7d8a745547ac05d2f45c0bd8566f0e79"
+    },
+    {
+      "path": "scripts/warp-shadow-timing-pack-builder.ts",
+      "sha256": "8efda1f20cabe82cb38c2a943b614501d891176490839e106c39664037f12faa",
+      "bytes": 18628,
+      "gitBlob": "0a2af615fb096a28e7bd806079a62b90d70836f2"
+    },
+    {
+      "path": "scripts/warp-shadow-timing-repeat-determinism.ts",
+      "sha256": "56e5a98a96278a7e334154b690b9eeea90817044f5291d7616c4cf6eb13ff843",
+      "bytes": 9783,
+      "gitBlob": "834fc01721f005b31c9d5bd0516db872c87685a1"
+    },
+    {
+      "path": "scripts/warp-shadow-warp-energetics-replay.ts",
+      "sha256": "5cc2d95182d71ab340f062c7b3ed082e9a40e2987e8d06699d2561553fb16d1f",
+      "bytes": 10727,
+      "gitBlob": "b7b1c329caba4baf83f9903c554c17006405df6b"
+    },
+    {
+      "path": "scripts/warp-shadow-warp-geometry-replay.ts",
+      "sha256": "739dee0b518f2b675cc1e6afaced30df626d4b1993c61ee171073bae1cb6a468",
+      "bytes": 10976,
+      "gitBlob": "89fe6e86dc0f763ef90bebab490b729b8b4e0c09"
+    },
+    {
+      "path": "scripts/warp-shift-plus-lapse-comparison.ts",
+      "sha256": "bf2f32cc652ff37d8abfb0fbb91beab4ee5b328bae465c3cd66576c2250b5368",
+      "bytes": 36926,
+      "gitBlob": "36a50366699d7e57ce26f3d7fb5a59e9b3ad5b02"
+    },
+    {
+      "path": "scripts/warp-shift-plus-lapse-dashboard.ts",
+      "sha256": "b77e2a328791879272cbb8210d38aa014f603fd23bd81c9e46822149ba4c222f",
+      "bytes": 140524,
+      "gitBlob": "82eced8bed03960881a367e11b252aa3d5a699cb"
+    },
+    {
+      "path": "scripts/warp-shift-plus-lapse-diagnostics.ts",
+      "sha256": "126f04fb53b8b09e8a79032ed8c3119b4f171abdc7b5246c1c33f9d9f22deadd",
+      "bytes": 34183,
+      "gitBlob": "bd568b45c4f87eec9b59944792aed1f836b0878a"
+    },
+    {
+      "path": "scripts/warp-state-of-record-synthesis.ts",
+      "sha256": "e1294206ff1fabc48251f13feb47d72e8d7e296b15b110f27a1f81365a9ae732",
+      "bytes": 20546,
+      "gitBlob": "5406e0d78d7fc8cd598331dddb50efe871f3e49a"
+    },
+    {
+      "path": "scripts/warp-tree-dag-walk.ts",
+      "sha256": "58129fe9684b53908c9b342663f3e95dc7e4c0636718280c53d168472a036765",
+      "bytes": 13012,
+      "gitBlob": "7444c1ec236c04db165e856679b091c6042a47a2"
+    },
+    {
+      "path": "scripts/warp-universal-coverage-audit.ts",
+      "sha256": "c001244ced760b204b5da127e71df2877e09ec5c2795807c21446f0f9594c219",
+      "bytes": 8956,
+      "gitBlob": "bb4e68b7a667c1aec3954f60cbf12c19facab031"
+    },
+    {
+      "path": "scripts/warp-york-control-family-proof-pack.ts",
+      "sha256": "d8f87cb5aab78ce45909cf6c419da95850bdb212583c5f5dd6e9c2f4e8910621",
+      "bytes": 2273251,
+      "gitBlob": "d62af182c48def0233dd2609b3510eb7cd14a9bc"
+    },
+    {
+      "path": "scripts/warp_fields_npz.py",
+      "sha256": "1cc2385b02e440ef5d437511de2559f1949c81db3095d8f60108ddaf9f427e0b",
+      "bytes": 8599,
+      "gitBlob": "9ef77973e080ce2dec7cf663173d38c13156307b"
+    }
+  ],
+  "repair": {
+    "path": "scripts/helix-ask-image-lens-acceptance-probe.ts",
+    "sourceCommit": "82cf80212a90c756d00632d55dd5e33671e4026d",
+    "priorGitBlob": "3e5891ca75da077b23efe36b1409d2aa8a946dfa",
+    "repairedGitBlob": "87579235b6fb648df785562da9deb4c5fa6119c0",
+    "reason": "Replace machine-specific clipboard default with explicit image input"
+  }
+}
